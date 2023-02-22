@@ -1,12 +1,16 @@
 // Imports
 import React from "react";
-import { GlobalStyle } from "./GlobalStyle";
+import { GlobalStyle, PageContainer } from "./GlobalStyle";
+import { HomePage } from "./screens/HomePage";
 
 // Functional Component
 export const App = () => {
 	return (
 		<React.Fragment>
-			<GlobalStyle />
+			<PageContainer>
+				<GlobalStyle />
+				<HomePage />
+			</PageContainer>
 		</React.Fragment>
 	);
 };
