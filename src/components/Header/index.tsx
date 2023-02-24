@@ -2,7 +2,7 @@
 import { Button } from "../Button";
 
 // Styled Components
-import { HeaderS, Logo, Nav, NavItemS, NavLink } from "./style";
+import { HamburgerBtn, HeaderS, Logo, Nav, NavItemS, NavLink } from "./style";
 
 // Types
 type NavItemProps = {
@@ -29,8 +29,9 @@ export const Header = () => {
 				<NavItem link=" " text="Tecnologias" />
 				<NavItem link=" " text="Projetos" />
 				<NavItem link=" " text="Contato" />
-				<Button text="Curriculo" />
+				<Button text="Currículo" />
 			</Nav>
+			<HamburgerBtn className="material-symbols-outlined">menu</HamburgerBtn>
 		</HeaderS>
 	);
 };

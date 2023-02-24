@@ -19,16 +19,23 @@ export const Nav = styled.ul`
 	display: flex;
 	align-items: center;
 	gap: 2em;
+
+	@media screen and (max-width: 768px) {
+		display: none;
+	}
 `;
 
 export const NavItemS = styled.li`
+	position: relative;
+
 	&::after {
 		content: "";
 		display: block;
 		height: 1px;
+		position: absolute;
 		width: 0%;
+		bottom: -0.5em;
 		transition: all 0.4s;
-		margin-top: 0.25em;
 		background-color: ${cssVariables.color.clrText};
 	}
 	&:hover::after {
@@ -39,4 +46,11 @@ export const NavItemS = styled.li`
 export const NavLink = styled.a`
 	color: ${cssVariables.color.clrText};
 	font-size: ${cssVariables.typography.fzSmall};
+`;
+
+export const HamburgerBtn = styled.span`
+	cursor: pointer;
+	@media screen and (min-width: 768px) {
+		display: none;
+	}
 `;

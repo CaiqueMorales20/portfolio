@@ -7,7 +7,7 @@ export const ButtonS = styled.button`
 	padding: 1em 2em;
 	border: 1px solid ${cssVariables.color.clrText};
 	color: ${cssVariables.color.clrText};
-	font-weight: 500;
+	font-weight: 700;
 	position: relative;
 	transition: all 0.2s ease-in-out;
 	cursor: pointer;
