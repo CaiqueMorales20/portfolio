@@ -2,6 +2,11 @@
 import styled from "styled-components";
 import { cssVariables } from "../../GlobalStyle";
 
+// Types
+type NavProps = {
+	opened: boolean;
+};
+
 // Styled Components
 export const HeaderS = styled.div`
 	height: 6rem;
@@ -15,13 +20,23 @@ export const Logo = styled.h1`
 	font-weight: 400;
 `;
 
-export const Nav = styled.ul`
+export const Nav = styled.ul<NavProps>`
 	display: flex;
 	align-items: center;
 	gap: 2em;
 
 	@media screen and (max-width: 768px) {
-		display: none;
+		position: absolute;
+		flex-direction: column;
+		right: 0;
+		bottom: 0;
+		top: 0;
+		width: 70vw;
+		justify-content: center;
+		background-color: #0f4657;
+		transition: all 0.4s ease-in-out;
+		transform: ${(props) =>
+			props.opened ? "translateX(0%)" : "translateX(100%)"};
 	}
 `;
 

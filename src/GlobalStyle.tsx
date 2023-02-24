@@ -27,6 +27,11 @@ export const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
     font-family: 'Lato', sans-serif;
   }
+  html,
+  body{
+    width: 100%;
+    overflow-x: hidden;
+  }
   body{
     background-color: ${cssVariables.color.clrPrimary};
     color: #fefefe;
