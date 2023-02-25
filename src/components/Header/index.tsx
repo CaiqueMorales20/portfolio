@@ -5,12 +5,25 @@ import { useState, useEffect, useRef } from "react";
 import { Button } from "../Button";
 
 // Styled Components
-import { HamburgerBtn, HeaderS, Logo, Nav, NavItemS, NavLink } from "./style";
+import {
+	HamburgerBtnS,
+	HamburguerNav,
+	HeaderS,
+	Logo,
+	Nav,
+	NavItemS,
+	NavLink,
+} from "./style";
 
 // Types
 type NavItemProps = {
 	link: string;
 	text: string;
+};
+
+type HamburgerBtnProps = {
+	setMobileMenu: (value: boolean) => void;
+	mobileMenu: boolean;
 };
 
 // Internal Component
@@ -19,6 +32,20 @@ export const NavItem = (props: NavItemProps) => {
 		<NavItemS>
 			<NavLink href={props.link}>{props.text}</NavLink>
 		</NavItemS>
+	);
+};
+
+export const HamburgerBtn = ({
+	mobileMenu,
+	setMobileMenu,
+}: HamburgerBtnProps) => {
+	return (
+		<HamburgerBtnS
+			onClick={() => setMobileMenu(!mobileMenu)}
+			className="material-symbols-outlined"
+		>
+			menu
+		</HamburgerBtnS>
 	);
 };
 
@@ -55,13 +82,11 @@ export const Header = () => {
 				<NavItem link=" " text="Projetos" />
 				<NavItem link=" " text="Contato" />
 				<Button text="Currículo" />
+				<HamburguerNav>
+					<HamburgerBtn setMobileMenu={setMobileMenu} mobileMenu={mobileMenu} />
+				</HamburguerNav>
 			</Nav>
-			<HamburgerBtn
-				onClick={() => setMobileMenu(!mobileMenu)}
-				className="material-symbols-outlined"
-			>
-				menu
-			</HamburgerBtn>
+			<HamburgerBtn setMobileMenu={setMobileMenu} mobileMenu={mobileMenu} />
 		</HeaderS>
 	);
 };

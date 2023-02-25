@@ -63,8 +63,20 @@ export const NavLink = styled.a`
 	font-size: ${cssVariables.typography.fzSmall};
 `;
 
-export const HamburgerBtn = styled.span`
+export const HamburgerBtnS = styled.span`
 	cursor: pointer;
+	@media screen and (min-width: 768px) {
+		display: none;
+	}
+`;
+
+export const HamburguerNav = styled.div`
+	position: absolute;
+	height: 6rem;
+	top: 0;
+	right: 5vw;
+	display: grid;
+	align-items: center;
 	@media screen and (min-width: 768px) {
 		display: none;
 	}
