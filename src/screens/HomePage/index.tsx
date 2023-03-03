@@ -1,7 +1,8 @@
 // Imported Components
-import { Header } from "../../components/Header";
+import { HomePageS } from "./style";
 
 // Functional Component
 export const HomePage = () => {
-	return <Header />;
+	// Rendering
+	return <HomePageS></HomePageS>;
 };
