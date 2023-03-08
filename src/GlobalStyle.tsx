@@ -52,6 +52,6 @@ export const GlobalStyle = createGlobalStyle`
 
 // Styled Components
 export const PageContainer = styled.div`
-	width: min(1440px, 90%);
+	width: min(1440px, 90vw);
 	margin-inline: auto;
 `;

@@ -8,6 +8,7 @@ import { PageContainer } from "./GlobalStyle";
 
 // Screens
 import { HomePage } from "./screens/HomePage";
+import { Socials } from "./components/Socials";
 
 // Functional Component
 export const App = () => {
@@ -18,6 +19,7 @@ export const App = () => {
 				<GlobalStyle />
 				<Header />
 				<HomePage />
+				<Socials />
 			</PageContainer>
 		</React.Fragment>
 	);
