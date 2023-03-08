@@ -12,7 +12,7 @@ export const HomePageS = styled.div`
 `;
 
 export const TextContainer = styled.div`
-	width: 90%;
+	width: 80%;
 `;
 
 export const Profession = styled.h1`
