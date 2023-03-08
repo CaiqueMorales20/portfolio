@@ -61,6 +61,7 @@ export const NavItemS = styled.li`
 export const NavLink = styled.a`
 	color: ${cssVariables.color.clrText};
 	font-size: ${cssVariables.typography.fzSmall};
+	font-weight: 700;
 `;
 
 export const HamburgerBtnS = styled.span`

@@ -5,10 +5,10 @@ import styled, { createGlobalStyle } from "styled-components";
 export const cssVariables = {
 	// Typography
 	typography: {
-		fzLargest: "1.953rem",
-		fzLarger: "1.563rem",
-		fzLarge: "1.25rem",
-		fzNormal: "1rem",
+		fzLargest: "2.953rem",
+		fzLarger: "1.763rem",
+		fzLarge: "1.45rem",
+		fzNormal: "1.1rem",
 		fzSmall: "0.8rem",
 		fzSmaller: "0.64rem",
 	},
@@ -35,6 +35,7 @@ export const GlobalStyle = createGlobalStyle`
   body{
     background-color: ${cssVariables.color.clrPrimary};
     color: #fefefe;
+    line-height: 1.6;
   }
   ul{
     list-style: none;
