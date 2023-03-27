@@ -17,17 +17,39 @@ export const LineS = styled.div`
 	writing-mode: vertical-lr;
 	display: flex;
 	align-items: center;
+	justify-content: center;
 	gap: 1em;
 
 	&::after {
 		content: "";
 		display: block;
-		height: 10rem;
-		width: 2px;
+		height: 6rem;
+		width: 1px;
 		background-color: #ffffff;
 	}
 `;
 
-export const Text = styled.p`
-	font-size: ${cssVariables.typography.fzNormal};
+export const Icon = styled.a`
+	color: #c1c1c1;
+
+	& > * {
+		transition: all 0.4s;
+		font-size: ${cssVariables.typography.fzNormal};
+	}
+
+	& > *:hover {
+		transform: translateY(-0.5rem);
+	}
+`;
+
+export const Email = styled.a`
+	font-size: ${cssVariables.typography.fzSmall};
+	color: #c1c1c1;
+	transition: all 0.4s;
+	cursor: pointer;
+
+	&:hover {
+		text-decoration: underline;
+		transform: translateY(-0.5rem);
+	}
 `;

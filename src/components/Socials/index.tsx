@@ -1,4 +1,6 @@
-import { LineContainer, LineS } from "./style";
+// Styled Components
+import { Icon, LineContainer, LineS, Email } from "./style";
+import { FiGithub, FiLinkedin, FiInstagram } from "react-icons/fi";
 
 // Types
 type LineProps = {
@@ -15,8 +17,23 @@ const Line = ({ children }: LineProps) => {
 export const Socials = () => {
 	return (
 		<LineContainer>
-			<Line>Linha Esquerda</Line>
-			<Line>Linha Direita</Line>
+			<Line>
+				<Icon href="https://github.com/CaiqueMorales20" target="_blank">
+					<FiGithub />
+				</Icon>
+				<Icon
+					href="https://www.linkedin.com/in/caique-morales/"
+					target="_blank"
+				>
+					<FiLinkedin />
+				</Icon>
+				<Icon href="https://www.instagram.com/caique_brad/" target="_blank">
+					<FiInstagram />
+				</Icon>
+			</Line>
+			<Line>
+				<Email href=" ">caiquemorales20@gmail.com</Email>
+			</Line>
 		</LineContainer>
 	);
 };

@@ -24,6 +24,7 @@ export const Nav = styled.ul<NavProps>`
 	display: flex;
 	align-items: center;
 	gap: 2em;
+	z-index: 2;
 
 	@media screen and (max-width: 768px) {
 		position: absolute;
@@ -33,7 +34,7 @@ export const Nav = styled.ul<NavProps>`
 		top: 0;
 		width: 70vw;
 		justify-content: center;
-		background-color: #0f4657;
+		background-color: #363636;
 		transition: all 0.4s ease-in-out;
 		transform: ${(props) =>
 			props.opened ? "translateX(0%)" : "translateX(100%)"};
@@ -61,7 +62,7 @@ export const NavItemS = styled.li`
 export const NavLink = styled.a`
 	color: ${cssVariables.color.clrText};
 	font-size: ${cssVariables.typography.fzSmall};
-	font-weight: 700;
+	letter-spacing: 1px;
 `;
 
 export const HamburgerBtnS = styled.span`

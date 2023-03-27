@@ -1,18 +1,17 @@
 // Imports
 import styled from "styled-components";
-import { cssVariables } from "../../GlobalStyle";
+import { Content, cssVariables } from "../../GlobalStyle";
 
 // Styled Components
-export const HomePageS = styled.div`
+export const HeroS = styled.div`
 	height: calc(100vh - 6rem);
-	margin-top: -6rem;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 `;
 
-export const TextContainer = styled.div`
-	width: 80%;
+export const TextContainer = styled(Content)`
+	margin-top: -6rem;
 `;
 
 export const Profession = styled.h1`

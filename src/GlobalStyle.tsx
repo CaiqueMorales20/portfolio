@@ -10,11 +10,11 @@ export const cssVariables = {
 		fzLarge: "1.45rem",
 		fzNormal: "1.1rem",
 		fzSmall: "0.8rem",
-		fzSmaller: "0.64rem",
+		fzSmaller: "0.74rem",
 	},
 	color: {
-		clrPrimary: "#0c3945",
-		clrText: "#ccd8f0",
+		clrPrimary: "#262626",
+		clrText: "#fefefe",
 	},
 };
 
@@ -26,6 +26,8 @@ export const GlobalStyle = createGlobalStyle`
     margin: 0;
     box-sizing: border-box;
     font-family: 'Lato', sans-serif;
+    
+	letter-spacing: 1px;
   }
   html,
   body{
@@ -54,4 +56,27 @@ export const GlobalStyle = createGlobalStyle`
 export const PageContainer = styled.div`
 	width: min(1800px, 90vw);
 	margin-inline: auto;
+`;
+
+export const Content = styled.div`
+	margin-inline: auto;
+	width: 60%;
+`;
+
+export const SectionTitle = styled.h1`
+	color: #ffffff;
+	position: relative;
+	width: max-content;
+	font-size: ${cssVariables.typography.fzLarger};
+
+	&::after {
+		content: "";
+		position: absolute;
+		display: block;
+		height: 1px;
+		width: 20rem;
+		background-color: #ffffff;
+		left: 120%;
+		top: 55%;
+	}
 `;

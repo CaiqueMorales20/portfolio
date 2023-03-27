@@ -10,6 +10,7 @@ export const ButtonS = styled.button`
 	font-weight: 700;
 	position: relative;
 	transition: all 0.2s ease-in-out;
+	font-size: ${cssVariables.typography.fzSmaller};
 	cursor: pointer;
 
 	&:hover {
