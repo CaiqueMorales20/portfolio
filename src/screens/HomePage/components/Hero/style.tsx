@@ -1,6 +1,6 @@
 // Imports
 import styled from "styled-components";
-import { Content, cssVariables } from "../../GlobalStyle";
+import { Content, cssVariables } from "../../../../GlobalStyle";
 
 // Styled Components
 export const HeroS = styled.div`
@@ -18,7 +18,7 @@ export const Profession = styled.h1`
 	letter-spacing: 2px;
 	font-size: ${cssVariables.typography.fzLargest};
 	font-weight: 900;
-	color: #ffffff;
+	color: ${cssVariables.color.clrText};
 `;
 
 export const DescriptionContainer = styled.div`
@@ -27,4 +27,5 @@ export const DescriptionContainer = styled.div`
 
 export const Description = styled.p`
 	font-size: ${cssVariables.typography.fzNormal};
+	color: ${cssVariables.color.clrText};
 `;

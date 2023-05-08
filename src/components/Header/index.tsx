@@ -3,51 +3,11 @@ import { useState, useEffect, useRef } from "react";
 
 // Imported Components
 import { Button } from "../Button";
+import { NavItem } from "./components/NavItem";
+import { HamburgerBtn } from "./components/HamburgerBtn";
 
 // Styled Components
-import {
-	HamburgerBtnS,
-	HamburguerNav,
-	HeaderS,
-	Logo,
-	Nav,
-	NavItemS,
-	NavLink,
-} from "./style";
-
-// Types
-type NavItemProps = {
-	link: string;
-	text: string;
-};
-
-type HamburgerBtnProps = {
-	setMobileMenu: (value: boolean) => void;
-	mobileMenu: boolean;
-};
-
-// Internal Component
-export const NavItem = (props: NavItemProps) => {
-	return (
-		<NavItemS>
-			<NavLink href={props.link}>{props.text}</NavLink>
-		</NavItemS>
-	);
-};
-
-export const HamburgerBtn = ({
-	mobileMenu,
-	setMobileMenu,
-}: HamburgerBtnProps) => {
-	return (
-		<HamburgerBtnS
-			onClick={() => setMobileMenu(!mobileMenu)}
-			className="material-symbols-outlined"
-		>
-			menu
-		</HamburgerBtnS>
-	);
-};
+import { HeaderS, Logo, Nav, HamburguerNav } from "./style";
 
 // Functional Component
 export const Header = () => {

@@ -13,8 +13,8 @@ export const cssVariables = {
 		fzSmaller: "0.74rem",
 	},
 	color: {
-		clrPrimary: "#262626",
-		clrText: "#fefefe",
+		clrPrimary: "#212121",
+		clrText: "#efefef",
 	},
 };
 
@@ -65,18 +65,19 @@ export const Content = styled.div`
 
 export const SectionTitle = styled.h1`
 	color: #ffffff;
-	position: relative;
-	width: max-content;
+	width: 100%;
 	font-size: ${cssVariables.typography.fzLarger};
+	display: flex;
+	align-items: center;
+	gap: 2rem;
 
 	&::after {
 		content: "";
-		position: absolute;
 		display: block;
 		height: 1px;
-		width: 20rem;
+		width: min(100%, 20rem);
 		background-color: #ffffff;
-		left: 120%;
 		top: 55%;
+		right: 0;
 	}
 `;

@@ -13,7 +13,7 @@ export const Hero = () => {
 	return (
 		<HeroS>
 			<TextContainer>
-				<Profession>Desenvolvedor Full-Stack</Profession>
+				<Profession>Desenvolvedor</Profession>
 				<DescriptionContainer>
 					<Description>
 						Atualmente sigo desenvolvendo tanto sites como aplicativos, minha

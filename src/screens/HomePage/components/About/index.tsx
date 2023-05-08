@@ -1,4 +1,5 @@
-import { Content, SectionTitle } from "../../GlobalStyle";
+// Imported Components
+import { Content, SectionTitle } from "../../../../GlobalStyle";
 
 // Functional Component
 export const About = () => {

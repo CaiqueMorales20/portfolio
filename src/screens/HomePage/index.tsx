@@ -1,6 +1,6 @@
 // Imported Components
-import { About } from "../../components/About";
-import { Hero } from "../../components/Hero";
+import { About } from "./components/About";
+import { Hero } from "./components/Hero";
 
 // Functional Component
 export const HomePage = () => {

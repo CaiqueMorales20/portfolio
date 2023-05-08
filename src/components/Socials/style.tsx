@@ -25,12 +25,12 @@ export const LineS = styled.div`
 		display: block;
 		height: 6rem;
 		width: 1px;
-		background-color: #ffffff;
+		background-color: ${cssVariables.color.clrText};
 	}
 `;
 
 export const Icon = styled.a`
-	color: #c1c1c1;
+	color: ${cssVariables.color.clrText};
 
 	& > * {
 		transition: all 0.4s;
@@ -44,7 +44,7 @@ export const Icon = styled.a`
 
 export const Email = styled.a`
 	font-size: ${cssVariables.typography.fzSmall};
-	color: #c1c1c1;
+	color: ${cssVariables.color.clrText};
 	transition: all 0.4s;
 	cursor: pointer;
 
