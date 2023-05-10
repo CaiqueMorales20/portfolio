@@ -36,7 +36,7 @@ export const GlobalStyle = createGlobalStyle`
   }
   body{
     background-color: ${cssVariables.color.clrPrimary};
-    color: #fefefe;
+    color: ${cssVariables.color.clrText};
     line-height: 1.6;
   }
   ul{
@@ -46,6 +46,10 @@ export const GlobalStyle = createGlobalStyle`
     outline: none;
     border: none;
     background-color: transparent;
+  }
+  img{
+    width: 100%;
+    height: auto;
   }
   a{
     text-decoration: none;
@@ -60,7 +64,7 @@ export const PageContainer = styled.div`
 
 export const Content = styled.div`
 	margin-inline: auto;
-	width: 60%;
+	width: 70%;
 `;
 
 export const SectionTitle = styled.h1`
