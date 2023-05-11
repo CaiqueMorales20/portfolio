@@ -1,8 +1,8 @@
+// Imports
 import styled from "styled-components";
 import { cssVariables } from "../../../../GlobalStyle";
 
 // Styled Components
-
 export const AboutS = styled.div`
 	margin-top: 4rem;
 	display: flex;

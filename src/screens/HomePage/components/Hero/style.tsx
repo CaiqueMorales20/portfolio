@@ -22,7 +22,7 @@ export const Profession = styled.h1`
 `;
 
 export const DescriptionContainer = styled.div`
-	width: min(30rem, 90%);
+	width: min(35rem, 90%);
 `;
 
 export const Description = styled.p`

@@ -1,10 +1,10 @@
 // Imported Components
 import {
-	Description,
-	DescriptionContainer,
 	HeroS,
-	Profession,
 	TextContainer,
+	Profession,
+	DescriptionContainer,
+	Description,
 } from "./style";
 
 // Functional Component
