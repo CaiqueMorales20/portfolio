@@ -12,9 +12,12 @@ export const cssVariables = {
 		fzSmall: "0.8rem",
 		fzSmaller: "0.74rem",
 	},
+	// Colors
 	color: {
 		clrPrimary: "#212121",
 		clrText: "#efefef",
+		clrText600: "#c1c1c1",
+		clrTitle: "red",
 	},
 };
 
@@ -65,10 +68,11 @@ export const PageContainer = styled.div`
 export const Content = styled.div`
 	margin-inline: auto;
 	width: 70%;
+	padding-bottom: 8rem;
 `;
 
 export const SectionTitle = styled.h1`
-	color: #ffffff;
+	color: ${cssVariables.color.clrText};
 	width: 100%;
 	font-size: ${cssVariables.typography.fzLarger};
 	display: flex;
@@ -80,7 +84,7 @@ export const SectionTitle = styled.h1`
 		display: block;
 		height: 1px;
 		width: min(100%, 20rem);
-		background-color: #ffffff;
+		background-color: ${cssVariables.color.clrText};
 		top: 55%;
 		right: 0;
 	}

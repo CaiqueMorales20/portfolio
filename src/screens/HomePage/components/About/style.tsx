@@ -15,7 +15,7 @@ export const AboutS = styled.div`
 
 export const AboutText = styled.p`
 	font-size: ${cssVariables.typography.fzNormal};
-	color: #c1c1c1;
+	color: ${cssVariables.color.clrText600};
 	text-align: justify;
 `;
 
