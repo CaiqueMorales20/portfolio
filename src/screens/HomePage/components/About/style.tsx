@@ -11,6 +11,10 @@ export const AboutS = styled.div`
 	& > * {
 		flex-basis: 100%;
 	}
+
+	@media screen and (max-width: 1080px) {
+		flex-direction: column;
+	}
 `;
 
 export const AboutText = styled.p`
