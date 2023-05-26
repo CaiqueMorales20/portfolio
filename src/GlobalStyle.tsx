@@ -14,7 +14,7 @@ export const cssVariables = {
 	},
 	// Colors
 	color: {
-		clrPrimary: "#212121",
+		clrPrimary: "#191627",
 		clrText: "#efefef",
 		clrText600: "#c1c1c1",
 		clrTitle: "red",

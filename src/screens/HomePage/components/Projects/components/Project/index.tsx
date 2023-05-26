@@ -11,7 +11,7 @@ export const Project = (props: ProjectProps) => {
 	return (
 		<ProjectS reversed={props.reversed}>
 			<Image src={PortfolioImg} />
-			<TextContainer>
+			<TextContainer reversed={props.reversed}>
 				<p>
 					Portfolio para mostrar meus conhecimentos, habilidades e falar um
 					pouco sobre mim mesmo. Portfolio para mostrar meus conhecimentos,

@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import { cssVariables } from "../../../../../../GlobalStyle";
 
 // Types
@@ -12,11 +12,18 @@ export const ProjectS = styled.div<ProjectProps>`
 	flex-direction: ${(props) => props.reversed && "row-reverse"};
 `;
 
-export const TextContainer = styled.div`
+export const TextContainer = styled.div<ProjectProps>`
 	background-color: #303030;
 	padding: 2em;
-	margin-left: -5%;
 	z-index: 4;
+	${(props) =>
+		props.reversed
+			? css`
+					margin-right: -5%;
+			  `
+			: css`
+					margin-left: -5%;
+			  `}
 `;
 
 export const Text = styled.p`
