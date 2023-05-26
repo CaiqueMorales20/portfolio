@@ -3,12 +3,13 @@ import { Image, ProjectS, TextContainer } from "./style";
 
 // Images
 import PortfolioImg from "../../../../../../assets/img/projects/portfolio.png";
+import { ProjectProps } from "./types";
 
 // Functional Component
-export const Project = () => {
+export const Project = (props: ProjectProps) => {
 	// Rendering
 	return (
-		<ProjectS>
+		<ProjectS reversed={props.reversed}>
 			<Image src={PortfolioImg} />
 			<TextContainer>
 				<p>

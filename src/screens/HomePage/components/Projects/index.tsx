@@ -11,7 +11,7 @@ export const Projects = () => {
 			<ProjectsS>
 				<SectionTitle>Projects</SectionTitle>
 				<Project />
-				<Project />
+				<Project reversed />
 				<Project />
 			</ProjectsS>
 		</Content>

@@ -1,4 +1,4 @@
 // Types
-export type ProjectsProps = {
-	reversed: boolean;
+export type ProjectProps = {
+	reversed?: boolean;
 };
