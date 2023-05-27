@@ -10,10 +10,14 @@ export const ProjectS = styled.div<ProjectProps>`
 	align-items: center;
 	justify-content: center;
 	flex-direction: ${(props) => props.reversed && "row-reverse"};
+
+	@media screen and (max-width: 1080px) {
+		flex-direction: column;
+	}
 `;
 
 export const TextContainer = styled.div<ProjectProps>`
-	background-color: #303030;
+	background-color: #292638;
 	padding: 2em;
 	z-index: 4;
 	${(props) =>
@@ -24,10 +28,21 @@ export const TextContainer = styled.div<ProjectProps>`
 			: css`
 					margin-left: -5%;
 			  `}
+
+	@media screen and (max-width: 1080px) {
+		margin-inline: 0;
+	}
 `;
 
 export const Text = styled.p`
 	font-size: ${cssVariables.typography.fzSmall};
 `;
 
-export const Image = styled.img``;
+export const Image = styled.img`
+	opacity: 0.5;
+	cursor: pointer;
+
+	&:hover {
+		opacity: 1;
+	}
+`;

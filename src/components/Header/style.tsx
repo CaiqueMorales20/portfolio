@@ -28,48 +28,17 @@ export const Nav = styled.ul<NavProps>`
 	z-index: 2;
 
 	@media screen and (max-width: 768px) {
-		position: absolute;
+		position: fixed;
 		flex-direction: column;
 		right: 0;
 		bottom: 0;
 		top: 0;
 		width: 70vw;
 		justify-content: center;
-		background-color: #363636;
-		transition: all 0.4s ease-in-out;
+		background-color: #151224;
+		z-index: 999;
 		transform: ${(props) =>
 			props.opened ? "translateX(0%)" : "translateX(100%)"};
-	}
-`;
-
-export const NavItemS = styled.li`
-	position: relative;
-
-	&::after {
-		content: "";
-		display: block;
-		height: 1px;
-		position: absolute;
-		width: 0%;
-		bottom: -0.5em;
-		transition: all 0.4s;
-		background-color: ${cssVariables.color.clrText};
-	}
-	&:hover::after {
-		width: 100%;
-	}
-`;
-
-export const NavLink = styled.a`
-	color: ${cssVariables.color.clrText};
-	font-size: ${cssVariables.typography.fzSmall};
-	letter-spacing: 1px;
-`;
-
-export const HamburgerBtnS = styled.span`
-	cursor: pointer;
-	@media screen and (min-width: 768px) {
-		display: none;
 	}
 `;
 

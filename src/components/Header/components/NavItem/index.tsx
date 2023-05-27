@@ -1,5 +1,5 @@
 // Styled Components
-import { NavItemS, NavLink } from "../../style";
+import { NavItemS, NavLink } from "./style";
 
 // Types
 type NavItemProps = {

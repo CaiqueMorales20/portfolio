@@ -27,7 +27,6 @@ export const ButtonS = styled.button`
 		height: 100%;
 		inset: 0;
 		z-index: -1;
-		transition: all 0.4s ease-in-out;
 	}
 
 	&:hover::after {

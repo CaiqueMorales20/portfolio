@@ -33,7 +33,6 @@ export const Icon = styled.a`
 	color: ${cssVariables.color.clrText};
 
 	& > * {
-		transition: all 0.4s;
 		font-size: ${cssVariables.typography.fzNormal};
 	}
 
@@ -45,7 +44,6 @@ export const Icon = styled.a`
 export const Email = styled.a`
 	font-size: ${cssVariables.typography.fzSmall};
 	color: ${cssVariables.color.clrText};
-	transition: all 0.4s;
 	cursor: pointer;
 
 	&:hover {

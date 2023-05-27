@@ -1,5 +1,5 @@
 // Styled Components
-import { HamburgerBtnS } from "../../style";
+import { HamburgerBtnS } from "./style";
 
 // Types
 type HamburgerBtnProps = {

@@ -28,9 +28,6 @@ export const GlobalStyle = createGlobalStyle`
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Lato', sans-serif;
-    
-	letter-spacing: 1px;
   }
   html,
   body{
@@ -39,8 +36,16 @@ export const GlobalStyle = createGlobalStyle`
   }
   body{
     background-color: ${cssVariables.color.clrPrimary};
+  }
+  body *,
+  body *::after,
+  body *::before{
     color: ${cssVariables.color.clrText};
     line-height: 1.6;
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 1px;
+    -webkit-tap-highlight-color: transparent;
+    transition: all 0.4s ease-in-out;
   }
   ul{
     list-style: none;
@@ -68,7 +73,7 @@ export const PageContainer = styled.div`
 export const Content = styled.div`
 	margin-inline: auto;
 	width: 70%;
-	padding-bottom: 8rem;
+	padding-bottom: 10rem;
 `;
 
 export const SectionTitle = styled.h1`
