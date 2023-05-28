@@ -8,9 +8,10 @@ export const cssVariables = {
 		fzLargest: "2.953rem",
 		fzLarger: "1.763rem",
 		fzLarge: "1.45rem",
-		fzNormal: "1.1rem",
+		fzNormal: "1rem",
 		fzSmall: "0.8rem",
-		fzSmaller: "0.74rem",
+		fzSmaller: "0.7rem",
+		fzSmallest: "0.5rem",
 	},
 	// Colors
 	color: {

@@ -1,3 +1,4 @@
+// Imports
 import styled, { css } from "styled-components";
 import { cssVariables } from "../../../../../../GlobalStyle";
 
@@ -19,7 +20,7 @@ export const ProjectS = styled.div<ProjectProps>`
 `;
 
 export const TextContainer = styled.div<ProjectProps>`
-	background-color: #292638;
+	background-color: #3c394b;
 	flex-basis: 60%;
 	padding: 2em;
 	z-index: 4;
@@ -39,7 +40,8 @@ export const TextContainer = styled.div<ProjectProps>`
 `;
 
 export const Text = styled.p`
-	font-size: ${cssVariables.typography.fzSmall};
+	font-size: ${cssVariables.typography.fzNormal};
+	color: ${cssVariables.color.clrText600};
 `;
 
 export const Link = styled.a`

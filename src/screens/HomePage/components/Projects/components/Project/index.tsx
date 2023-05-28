@@ -1,5 +1,5 @@
 // Styled Components
-import { Image, Link, ProjectS, TextContainer } from "./style";
+import { Image, Link, ProjectS, Text, TextContainer } from "./style";
 
 // Images
 import PortfolioImg from "../../../../../../assets/img/projects/portfolio.png";
@@ -14,11 +14,11 @@ export const Project = (props: ProjectProps) => {
 				<Image src={PortfolioImg} />
 			</Link>
 			<TextContainer reversed={props.reversed}>
-				<p>
+				<Text>
 					Portfolio para mostrar meus conhecimentos, habilidades e falar um
 					pouco sobre mim mesmo. Portfolio para mostrar meus conhecimentos,
 					habilidades e falar um pouco sobre mim mesmo.
-				</p>
+				</Text>
 			</TextContainer>
 		</ProjectS>
 	);
