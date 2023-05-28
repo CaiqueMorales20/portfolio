@@ -46,6 +46,7 @@ export const GlobalStyle = createGlobalStyle`
     letter-spacing: 1px;
     -webkit-tap-highlight-color: transparent;
     transition: all 0.4s ease-in-out;
+    z-index: 2;
   }
   ul{
     list-style: none;

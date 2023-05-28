@@ -10,9 +10,9 @@ export const Projects = () => {
 		<Content>
 			<ProjectsS>
 				<SectionTitle>Projects</SectionTitle>
-				<Project />
-				<Project reversed />
-				<Project />
+				<Project link="https://caiquemorales.com/" />
+				<Project link="https://caiquemorales.com/" reversed />
+				<Project link="https://caiquemorales.com/" />
 			</ProjectsS>
 		</Content>
 	);
