@@ -1,6 +1,5 @@
 // Imports
 import styled from "styled-components";
-import { cssVariables } from "../../GlobalStyle";
 
 // Types
 type NavProps = {
@@ -16,8 +15,8 @@ export const HeaderS = styled.div`
 `;
 
 export const Logo = styled.h1`
-	font-size: ${cssVariables.typography.fzLarger};
-	color: ${cssVariables.color.clrText};
+	font-size: var(--fzLarger);
+	color: var(--clrText);
 	font-weight: 400;
 `;
 

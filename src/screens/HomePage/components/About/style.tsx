@@ -1,6 +1,5 @@
 // Imports
 import styled from "styled-components";
-import { cssVariables } from "../../../../GlobalStyle";
 
 // Styled Components
 export const AboutS = styled.div`
@@ -18,8 +17,8 @@ export const AboutS = styled.div`
 `;
 
 export const AboutText = styled.p`
-	font-size: ${cssVariables.typography.fzNormal};
-	color: ${cssVariables.color.clrText600};
+	font-size: var(--fzNormal);
+	color: var(--clrText600);
 	text-align: justify;
 `;
 

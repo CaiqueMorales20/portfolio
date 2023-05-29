@@ -1,6 +1,5 @@
 // Imports
 import styled from "styled-components";
-import { cssVariables } from "../../GlobalStyle";
 
 // Styled Components
 export const HomePageS = styled.div`
@@ -17,7 +16,7 @@ export const TextContainer = styled.div`
 
 export const Profession = styled.h1`
 	letter-spacing: 2px;
-	font-size: ${cssVariables.typography.fzLargest};
+	font-size: var(--fzLargest);
 	font-weight: 900;
 	color: #ffffff;
 `;
@@ -27,5 +26,5 @@ export const DescriptionContainer = styled.div`
 `;
 
 export const Description = styled.p`
-	font-size: ${cssVariables.typography.fzNormal};
+	font-size: var(--fzNormal);
 `;

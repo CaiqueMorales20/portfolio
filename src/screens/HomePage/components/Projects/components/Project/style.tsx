@@ -1,6 +1,5 @@
 // Imports
 import styled, { css } from "styled-components";
-import { cssVariables } from "../../../../../../GlobalStyle";
 
 // Types
 type ProjectProps = {
@@ -40,8 +39,8 @@ export const TextContainer = styled.div<ProjectProps>`
 `;
 
 export const Text = styled.p`
-	font-size: ${cssVariables.typography.fzNormal};
-	color: ${cssVariables.color.clrText600};
+	font-size: var(--fzNormal);
+	color: var(--clrText600);
 `;
 
 export const Link = styled.a`

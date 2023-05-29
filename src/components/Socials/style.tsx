@@ -1,6 +1,5 @@
 // Imports
 import styled from "styled-components";
-import { cssVariables } from "../../GlobalStyle";
 
 // Styled Components
 export const LineContainer = styled.div`
@@ -26,15 +25,15 @@ export const LineS = styled.div`
 		display: block;
 		height: 6rem;
 		width: 1px;
-		background-color: ${cssVariables.color.clrText};
+		background-color: var(--clrText);
 	}
 `;
 
 export const Icon = styled.a`
-	color: ${cssVariables.color.clrText};
+	color: var(--clrText);
 
 	& > * {
-		font-size: ${cssVariables.typography.fzNormal};
+		font-size: var(--fzNormal);
 	}
 
 	& > *:hover {
@@ -43,8 +42,8 @@ export const Icon = styled.a`
 `;
 
 export const Email = styled.a`
-	font-size: ${cssVariables.typography.fzSmall};
-	color: ${cssVariables.color.clrText};
+	font-size: var(--fzSmall);
+	color: var(--clrText);
 	cursor: pointer;
 
 	&:hover {

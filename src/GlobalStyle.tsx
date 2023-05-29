@@ -1,29 +1,26 @@
 // Imports
 import styled, { createGlobalStyle } from "styled-components";
 
-// Variables
-export const cssVariables = {
-	// Typography
-	typography: {
-		fzLargest: "2.953rem",
-		fzLarger: "1.763rem",
-		fzLarge: "1.45rem",
-		fzNormal: "1rem",
-		fzSmall: "0.8rem",
-		fzSmaller: "0.7rem",
-		fzSmallest: "0.5rem",
-	},
-	// Colors
-	color: {
-		clrPrimary: "#191627",
-		clrText: "#efefef",
-		clrText600: "#c1c1c1",
-		clrTitle: "red",
-	},
-};
-
 // Global Style
 export const GlobalStyle = createGlobalStyle`
+  // Variables
+  :root {
+    // Typography
+    --fzLargest: 2.953rem;
+    --fzLarger: 1.763rem;
+    --fzLarge: 1.45rem;
+    --fzNormal: 1rem;
+    --fzSmall: 0.8rem;
+    --fzSmaller: 0.7rem;
+    --fzSmallest: 0.5rem;
+
+    // Colors
+    --clrPrimary: #191627;
+    --clrText: #efefef;
+    --clrText600: #c1c1c1;
+    --clrTitle: red;
+  }; 
+
   // CSS
   *{
     padding: 0;
@@ -36,12 +33,12 @@ export const GlobalStyle = createGlobalStyle`
     overflow-x: hidden;
   }
   body{
-    background-color: ${cssVariables.color.clrPrimary};
+    background-color: var(--clrPrimary);
   }
   body *,
   body *::after,
   body *::before{
-    color: ${cssVariables.color.clrText};
+    color: var(--clrText);
     line-height: 1.6;
     font-family: 'Lato', sans-serif;
     letter-spacing: 1px;
@@ -79,9 +76,9 @@ export const Content = styled.div`
 `;
 
 export const SectionTitle = styled.h1`
-	color: ${cssVariables.color.clrText};
+	color: var(--clrText);
 	width: 100%;
-	font-size: ${cssVariables.typography.fzLarger};
+	font-size: var(--fzLarger);
 	display: flex;
 	align-items: center;
 	gap: 2rem;
@@ -91,7 +88,7 @@ export const SectionTitle = styled.h1`
 		display: block;
 		height: 1px;
 		width: min(100%, 20rem);
-		background-color: ${cssVariables.color.clrText};
+		background-color: var(--clrText);
 		top: 55%;
 		right: 0;
 	}
