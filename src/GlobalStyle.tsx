@@ -21,6 +21,19 @@ export const GlobalStyle = createGlobalStyle`
     --clrTitle: red;
   }; 
 
+  @media screen and (max-width: 768px) {
+    :root{
+    // Typography
+    --fzLargest: 1.953rem;
+    --fzLarger: 1.363rem;
+    --fzLarge: 1rem;
+    --fzNormal: .8rem;
+    --fzSmall: 0.6rem;
+    --fzSmaller: 0.5rem;
+    --fzSmallest: 0.3rem;
+    }
+  } 
+
   // CSS
   *{
     padding: 0;
