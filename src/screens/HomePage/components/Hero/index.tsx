@@ -13,11 +13,11 @@ export const Hero = () => {
 	return (
 		<HeroS>
 			<TextContainer>
-				<Profession>Desenvolvedor</Profession>
+				<Profession>Developer</Profession>
 				<DescriptionContainer>
 					<Description>
-						Atualmente sigo desenvolvendo tanto sites como aplicativos, minha
-						tecnologia principal na qual desenvolvo é o React.
+						Currently I continue to develop both websites and applications, my
+						main technology in which I develop is React.
 					</Description>
 				</DescriptionContainer>
 			</TextContainer>

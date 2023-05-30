@@ -1,8 +1,7 @@
 // Styled Components
 import { Image, Link, ProjectS, Text, TextContainer } from "./style";
 
-// Images
-import PortfolioImg from "../../../../../../assets/img/projects/portfolio.png";
+// Types
 import { ProjectProps } from "./types";
 
 // Functional Component
@@ -11,14 +10,10 @@ export const Project = (props: ProjectProps) => {
 	return (
 		<ProjectS reversed={props.reversed}>
 			<Link href={props.link} target="_blank">
-				<Image src={PortfolioImg} />
+				<Image src={props.img} />
 			</Link>
 			<TextContainer reversed={props.reversed}>
-				<Text>
-					Portfolio para mostrar meus conhecimentos, habilidades e falar um
-					pouco sobre mim mesmo. Portfolio para mostrar meus conhecimentos,
-					habilidades e falar um pouco sobre mim mesmo.
-				</Text>
+				<Text>{props.description}</Text>
 			</TextContainer>
 		</ProjectS>
 	);

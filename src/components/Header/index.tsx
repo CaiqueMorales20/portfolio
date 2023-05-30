@@ -37,11 +37,10 @@ export const Header = () => {
 		<HeaderS>
 			<Logo>CM</Logo>
 			<Nav ref={wrapperRef} opened={mobileMenu}>
-				<NavItem link=" " text="Sobre" />
-				<NavItem link=" " text="Tecnologias" />
-				<NavItem link=" " text="Projetos" />
-				<NavItem link=" " text="Contato" />
-				<Button text="Currículo" />
+				<NavItem link=" " text="About" />
+				<NavItem link=" " text="Projects" />
+				<NavItem link=" " text="Contact" />
+				<Button text="Curriculum" />
 				<HamburguerNav>
 					<HamburgerBtn setMobileMenu={setMobileMenu} mobileMenu={mobileMenu} />
 				</HamburguerNav>

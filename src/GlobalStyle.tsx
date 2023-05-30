@@ -26,7 +26,7 @@ export const GlobalStyle = createGlobalStyle`
     // Typography
     --fzLargest: 1.953rem;
     --fzLarger: 1.363rem;
-    --fzLarge: 1rem;
+    --fzLarge: 1  rem;
     --fzNormal: .8rem;
     --fzSmall: 0.6rem;
     --fzSmaller: 0.5rem;
