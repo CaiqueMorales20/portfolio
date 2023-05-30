@@ -1,5 +1,5 @@
 // Styled Components
-import { Image, Link, ProjectS, Text, TextContainer } from "./style";
+import { ProjectS, Link, Image, TextContainer, Text } from "./style";
 
 // Types
 import { ProjectProps } from "./types";
@@ -10,7 +10,7 @@ export const Project = (props: ProjectProps) => {
 	return (
 		<ProjectS reversed={props.reversed}>
 			<Link href={props.link} target="_blank">
-				<Image src={props.img} />
+				<Image src={props.img} alt={props.title} />
 			</Link>
 			<TextContainer reversed={props.reversed}>
 				<Text>{props.description}</Text>
