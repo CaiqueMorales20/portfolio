@@ -13,8 +13,8 @@ export const Projects = () => {
 	// Rendering
 	return (
 		<Content>
+			<SectionTitle>Projects</SectionTitle>
 			<ProjectsS>
-				<SectionTitle>Projects</SectionTitle>
 				{ProjectsData.map((item, index) => {
 					// Rendering
 					return <Project {...item} key={index} />;

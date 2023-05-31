@@ -3,7 +3,6 @@ import styled from "styled-components";
 
 // Styled Components
 export const AboutS = styled.div`
-	margin-top: 4rem;
 	display: flex;
 	gap: 3rem;
 

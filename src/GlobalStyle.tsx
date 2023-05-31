@@ -62,6 +62,13 @@ export const GlobalStyle = createGlobalStyle`
   ul{
     list-style: none;
   }
+  input,
+  textarea{
+    outline: none;
+    border: none;
+    background-color: transparent;
+    font-weight: 400;
+  }
   button{
     outline: none;
     border: none;
@@ -95,6 +102,7 @@ export const SectionTitle = styled.h1`
 	display: flex;
 	align-items: center;
 	gap: 2rem;
+	margin-bottom: 2rem;
 
 	&::after {
 		content: "";
