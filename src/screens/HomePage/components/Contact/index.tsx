@@ -3,8 +3,9 @@ import { useForm } from "react-hook-form";
 
 // Imported Components
 import { Content, SectionTitle } from "../../../../GlobalStyle";
-import { ContactS, FormS, InputS, SubmitButton, TextAreaS } from "./style";
-import { useEffect } from "react";
+
+// Styled COmponents
+import { ContactS, FormS, InputS, TextAreaS, SubmitButton } from "./style";
 
 // Functional Component
 export const Contact = () => {
@@ -12,10 +13,6 @@ export const Contact = () => {
 	const onSubmit = (data: any) => {
 		console.log(data);
 	};
-
-	useEffect(() => {
-		console.log("teste");
-	}, []);
 
 	// Rendering
 	return (

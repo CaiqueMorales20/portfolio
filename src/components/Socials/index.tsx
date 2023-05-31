@@ -1,5 +1,7 @@
 // Styled Components
 import { Icon, LineContainer, LineS, Email } from "./style";
+
+// Icons
 import { FiGithub, FiLinkedin, FiInstagram } from "react-icons/fi";
 
 // Types
