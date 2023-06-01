@@ -10,7 +10,7 @@ export const LineContainer = styled.div`
 	margin-inline: auto;
 	justify-content: space-between;
 	align-items: flex-end;
-	z-index: -1;
+	z-index: 0;
 `;
 
 export const LineS = styled.div`
