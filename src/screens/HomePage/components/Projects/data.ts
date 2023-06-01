@@ -23,7 +23,7 @@ export const ProjectsData = [
 		title: "Calculator",
 		description:
 			"Calculator with basic operations, having addition, subtraction, multiplication and division. It has a system to overwrite the last operation if it is not the desired one.",
-		link: "https://caiquemorales.com/",
+		link: "https://calculator-devcaique.netlify.app/",
 		img: CalculatorImg,
 	},
 ];
