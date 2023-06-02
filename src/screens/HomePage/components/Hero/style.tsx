@@ -12,6 +12,7 @@ export const HeroS = styled.div`
 
 export const TextContainer = styled(Content)`
 	margin-top: -6rem;
+	padding-bottom: 0;
 `;
 
 export const Profession = styled.h1`

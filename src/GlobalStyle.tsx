@@ -92,7 +92,7 @@ export const PageContainer = styled.div`
 export const Content = styled.div`
 	margin-inline: auto;
 	width: 70%;
-	padding-bottom: 10rem;
+	padding-bottom: 15rem;
 `;
 
 export const SectionTitle = styled.h1`
