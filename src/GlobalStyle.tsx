@@ -6,13 +6,13 @@ export const GlobalStyle = createGlobalStyle`
   // Variables
   :root {
     // Typography
-    --fzLargest: 2.953rem;
-    --fzLarger: 1.763rem;
+    --fzLargest: 2.853rem;
+    --fzLarger: 1.563rem;
     --fzLarge: 1.45rem;
-    --fzNormal: 1rem;
-    --fzSmall: 0.8rem;
-    --fzSmaller: 0.7rem;
-    --fzSmallest: 0.5rem;
+    --fzNormal: 1.05rem;
+    --fzSmall: 0.84rem;
+    --fzSmaller: 0.75rem;
+    --fzSmallest: 0.48rem;
 
     // Colors
     --clrPrimary: #191627;
