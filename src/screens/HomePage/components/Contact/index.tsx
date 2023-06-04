@@ -1,5 +1,6 @@
 // Imports
-import { useForm } from "react-hook-form";
+import { useRef } from "react";
+import emailjs from "@emailjs/browser";
 
 // Imported Components
 import { Content, SectionTitle } from "../../../../GlobalStyle";
@@ -9,9 +10,28 @@ import { ContactS, FormS, InputS, TextAreaS, SubmitButton } from "./style";
 
 // Functional Component
 export const Contact = () => {
-	const { register, handleSubmit } = useForm();
-	const onSubmit = (data: any) => {
-		console.log(data);
+	// Variables
+	const form = useRef() as any;
+
+	// Functions
+	const sendEmail = (e: any) => {
+		e.preventDefault();
+
+		emailjs
+			.sendForm(
+				"service_zgdcyfm",
+				"template_nqx9mr1",
+				form.current,
+				"hv75Z0c-mETbppE6e"
+			)
+			.then(
+				(result) => {
+					console.log(result.text);
+				},
+				(error) => {
+					console.log(error.text);
+				}
+			);
 	};
 
 	// Rendering
@@ -19,12 +39,12 @@ export const Contact = () => {
 		<Content>
 			<SectionTitle>Contact</SectionTitle>
 			<ContactS>
-				<FormS>
-					<InputS placeholder="First Name" {...register("firstName")} />
-					<InputS placeholder="Last Name" {...register("lastName")} />
-					<TextAreaS placeholder="Message" {...register("message")}></TextAreaS>
+				<FormS ref={form} onSubmit={sendEmail}>
+					<InputS type="text" placeholder="Name" name="user_name" />
+					<InputS type="email" placeholder="Email" name="user_email" />
+					<TextAreaS placeholder="Message" name="message"></TextAreaS>
 				</FormS>
-				<SubmitButton onClick={handleSubmit(onSubmit)}>Send</SubmitButton>
+				<SubmitButton onClick={sendEmail}>Send</SubmitButton>
 			</ContactS>
 		</Content>
 	);

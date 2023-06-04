@@ -9,7 +9,7 @@ export const ContactS = styled.section`
 	gap: 2em;
 `;
 
-export const FormS = styled.div`
+export const FormS = styled.form`
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	gap: 1.5em;
