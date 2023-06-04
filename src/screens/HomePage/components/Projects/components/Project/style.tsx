@@ -12,16 +12,18 @@ export const ProjectS = styled.div<ProjectProps>`
 	align-items: center;
 	justify-content: center;
 
-	&:nth-child(2n + 2) {
-		flex-direction: row-reverse;
-	}
-
-	& > *:nth-child(2n + 2) {
-		margin-right: -5%;
-	}
-
 	@media screen and (max-width: 1080px) {
 		flex-direction: column;
+	}
+
+	@media screen and (min-width: 1080px) {
+		&:nth-child(2n + 2) {
+			flex-direction: row-reverse;
+		}
+
+		& > *:nth-child(2n + 2) {
+			margin-right: -5%;
+		}
 	}
 `;
 
