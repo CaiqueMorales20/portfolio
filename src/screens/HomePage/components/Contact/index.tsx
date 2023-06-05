@@ -1,5 +1,6 @@
 // Imports
 import { useRef } from "react";
+import { useForm } from "react-hook-form";
 import emailjs from "@emailjs/browser";
 
 // Imported Components
@@ -12,11 +13,16 @@ import { ContactS, FormS, InputS, TextAreaS, SubmitButton } from "./style";
 export const Contact = () => {
 	// Variables
 	const form = useRef() as any;
+	const {
+		register,
+		reset,
+		handleSubmit,
+		formState: { errors },
+	} = useForm();
 
 	// Functions
 	const sendEmail = (e: any) => {
 		e.preventDefault();
-
 		emailjs
 			.sendForm(
 				"service_zgdcyfm",
@@ -27,6 +33,7 @@ export const Contact = () => {
 			.then(
 				(result) => {
 					console.log(result.text);
+					reset();
 				},
 				(error) => {
 					console.log(error.text);
@@ -40,11 +47,34 @@ export const Contact = () => {
 			<SectionTitle>Contact</SectionTitle>
 			<ContactS>
 				<FormS ref={form} onSubmit={sendEmail}>
-					<InputS type="text" placeholder="Name" name="user_name" />
-					<InputS type="email" placeholder="Email" name="user_email" />
-					<TextAreaS placeholder="Message" name="message"></TextAreaS>
+					<InputS
+						type="text"
+						placeholder="Name"
+						{...(register("user_name"), { required: true })}
+						aria-invalid={errors.user_name ? "true" : "false"}
+					/>
+					{errors.user_name?.type === "required" && (
+						<p role="alert">Name is required</p>
+					)}
+					<InputS
+						type="email"
+						placeholder="Email"
+						aria-invalid={errors.user_email ? "true" : "false"}
+						{...(register("user_email"), { required: true })}
+					/>
+					{errors.user_email?.type === "required" && (
+						<p role="alert">Name is required</p>
+					)}
+					<TextAreaS
+						placeholder="Message"
+						{...(register("message"), { required: true })}
+						aria-invalid={errors.message ? "true" : "false"}
+					></TextAreaS>
+					{errors.message?.type === "required" && (
+						<p role="alert">Name is required</p>
+					)}
+					<SubmitButton type="submit" value="SEND MESSAGE" />
 				</FormS>
-				<SubmitButton onClick={sendEmail}>Send</SubmitButton>
 			</ContactS>
 		</Content>
 	);

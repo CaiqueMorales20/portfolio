@@ -9,6 +9,7 @@ type NavItemProps = {
 
 // Functional Component
 export const NavItem = (props: NavItemProps) => {
+	// Rendering
 	return (
 		<NavItemS>
 			<NavLink href={props.link}>{props.text}</NavLink>

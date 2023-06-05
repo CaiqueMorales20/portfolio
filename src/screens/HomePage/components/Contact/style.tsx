@@ -38,7 +38,7 @@ export const TextAreaS = styled.textarea`
 	grid-column: span 2;
 `;
 
-export const SubmitButton = styled.button`
+export const SubmitButton = styled.input`
 	--clr-normal: #231d3a;
 
 	padding: 1.25em 3em;
@@ -52,21 +52,7 @@ export const SubmitButton = styled.button`
 
 	&:hover {
 		color: var(--clrPrimary);
-		z-index: 1;
-	}
-
-	&::after {
-		content: "";
-		position: absolute;
-		display: block;
 		background-color: var(--clrText);
-		width: 0%;
-		height: 100%;
-		inset: 0;
-		z-index: -1;
-	}
-
-	&:hover::after {
-		width: 100%;
+		z-index: 1;
 	}
 `;

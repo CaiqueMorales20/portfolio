@@ -23,3 +23,9 @@ export const NavLink = styled.a`
 	color: var(--clrText);
 	font-size: var(--fzSmall);
 `;
+
+export const Teste = styled.div`
+	margin-top: 40em;
+	background-color: red;
+	height: 10rem;
+`;

@@ -44,6 +44,7 @@ export const GlobalStyle = createGlobalStyle`
   body{
     width: 100%;
     overflow-x: hidden;
+    scroll-behavior: smooth;
   }
   body{
     background-color: var(--clrPrimary);
