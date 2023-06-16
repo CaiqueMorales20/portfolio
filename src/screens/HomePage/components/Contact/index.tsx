@@ -1,6 +1,5 @@
 // Imports
-import { useRef } from "react";
-import { useForm } from "react-hook-form";
+import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 
 // Imported Components
@@ -13,12 +12,9 @@ import { ContactS, FormS, InputS, TextAreaS, SubmitButton } from "./style";
 export const Contact = () => {
 	// Variables
 	const form = useRef() as any;
-	const {
-		register,
-		reset,
-		handleSubmit,
-		formState: { errors },
-	} = useForm();
+	const [user_name, setUser_name] = useState("");
+	const [user_email, setUser_email] = useState("");
+	const [message, setMessage] = useState("");
 
 	// Functions
 	const sendEmail = (e: any) => {
@@ -33,7 +29,9 @@ export const Contact = () => {
 			.then(
 				(result) => {
 					console.log(result.text);
-					reset();
+					setUser_name("");
+					setUser_email("");
+					setMessage("");
 				},
 				(error) => {
 					console.log(error.text);
@@ -50,29 +48,26 @@ export const Contact = () => {
 					<InputS
 						type="text"
 						placeholder="Name"
-						{...(register("user_name"), { required: true })}
-						aria-invalid={errors.user_name ? "true" : "false"}
+						value={user_name}
+						onChange={(e) => setUser_name(e.target.value)}
+						name="user_name"
+						required
 					/>
-					{errors.user_name?.type === "required" && (
-						<p role="alert">Name is required</p>
-					)}
 					<InputS
 						type="email"
 						placeholder="Email"
-						aria-invalid={errors.user_email ? "true" : "false"}
-						{...(register("user_email"), { required: true })}
+						value={user_email}
+						onChange={(e) => setUser_email(e.target.value)}
+						name="user_email"
+						required
 					/>
-					{errors.user_email?.type === "required" && (
-						<p role="alert">Name is required</p>
-					)}
 					<TextAreaS
 						placeholder="Message"
-						{...(register("message"), { required: true })}
-						aria-invalid={errors.message ? "true" : "false"}
+						name="message"
+						value={message}
+						onChange={(e) => setMessage(e.target.value)}
+						required
 					></TextAreaS>
-					{errors.message?.type === "required" && (
-						<p role="alert">Name is required</p>
-					)}
 					<SubmitButton type="submit" value="SEND MESSAGE" />
 				</FormS>
 			</ContactS>

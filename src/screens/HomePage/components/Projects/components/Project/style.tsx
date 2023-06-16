@@ -41,7 +41,7 @@ export const TextContainer = styled.div<ProjectProps>`
 
 export const Text = styled.p`
 	font-size: var(--fzNormal);
-	color: var(--clrText600);
+	color: var(--clrNeutral);
 `;
 
 export const Link = styled.a`
@@ -51,7 +51,6 @@ export const Link = styled.a`
 `;
 
 export const Image = styled.img`
-	opacity: 0.5;
 	cursor: pointer;
 	transition: all 0.3s ease-in-out;
 
