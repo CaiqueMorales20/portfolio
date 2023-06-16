@@ -94,6 +94,10 @@ export const Content = styled.div`
 	margin-inline: auto;
 	width: 70%;
 	padding-bottom: 15rem;
+
+	@media screen and (max-width: 768px) {
+		padding-bottom: 5rem;
+	}
 `;
 
 export const SectionTitle = styled.h1`
