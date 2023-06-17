@@ -2,7 +2,7 @@
 import { Content, SectionTitle } from "../../../../GlobalStyle";
 
 // Image
-import Fireship from "../../../../assets/img/fireship.png";
+import Fireship from "../../../../assets/img/about/about.jpg";
 
 // Styled Components
 import { AboutS, AboutText, ImageContainer, Image } from "./style";
