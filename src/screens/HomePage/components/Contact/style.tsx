@@ -27,23 +27,31 @@ export const InputS = styled.input`
 	align-items: center;
 	padding: 1em;
 	color: #ffffff;
-	background-color: #231d3a;
+	background-color: var(--clrPrimary900);
+
+	&::placeholder {
+		color: var(--clrPrimary500);
+	}
 `;
 
 export const TextAreaS = styled.textarea`
-	background-color: #231d3a;
+	background-color: var(--clrPrimary900);
 	height: 10rem;
 	padding: 1em;
 	resize: none;
 	grid-column: span 2;
+
+	&::placeholder {
+		color: var(--clrPrimary500);
+	}
 `;
 
 export const SubmitButton = styled.input`
 	--clr-normal: #231d3a;
 
 	padding: 1.25em 3em;
-	border: 1px solid var(--clrText);
-	color: var(--clrText);
+	border: 1px solid var(--clrPrimary400);
+	color: var(--clrPrimary400);
 	font-weight: 700;
 	position: relative;
 	transition: all 0.2s ease-in-out;
@@ -51,8 +59,8 @@ export const SubmitButton = styled.input`
 	cursor: pointer;
 
 	&:hover {
-		color: var(--clrPrimary);
-		background-color: var(--clrText);
+		color: var(--clrPrimary900);
+		background-color: var(--clrPrimary400);
 		z-index: 1;
 	}
 `;

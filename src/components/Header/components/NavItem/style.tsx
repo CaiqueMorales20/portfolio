@@ -12,7 +12,7 @@ export const NavItemS = styled.li`
 		position: absolute;
 		width: 0%;
 		bottom: -0.5em;
-		background-color: var(--clrText);
+		background-color: var(--clrPrimary400);
 	}
 	&:hover::after {
 		width: 100%;
@@ -20,7 +20,7 @@ export const NavItemS = styled.li`
 `;
 
 export const NavLink = styled.a`
-	color: var(--clrText);
+	color: var(--clrPrimary400);
 	font-size: var(--fzSmall);
 `;
 

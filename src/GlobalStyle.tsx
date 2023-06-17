@@ -15,10 +15,11 @@ export const GlobalStyle = createGlobalStyle`
     --fzSmallest: 0.48rem;
 
     // Colors
-    --clrPrimary: #191627;
-    --clrText: #efefef;
-    --clrText600: #c1c1c1;
-    --clrTitle: red;
+    --clrPrimary900: #7e756f;
+    --clrPrimary700: #8F857D;
+    --clrPrimary600: #BFAFA6;
+    --clrPrimary500: #D5BFB4;
+    --clrPrimary400: #F7F4F1;
   }; 
 
   @media screen and (max-width: 768px) {
@@ -47,12 +48,12 @@ export const GlobalStyle = createGlobalStyle`
     scroll-behavior: smooth;
   }
   body{
-    background-color: var(--clrPrimary);
+    background-color: var(--clrPrimary700);
   }
   body *,
   body *::after,
   body *::before{
-    color: var(--clrText);
+    color: var(--clrPrimary400);
     line-height: 1.6;
     font-family: 'Lato', sans-serif;
     letter-spacing: 1px;
@@ -101,7 +102,7 @@ export const Content = styled.div`
 `;
 
 export const SectionTitle = styled.h1`
-	color: var(--clrText);
+	color: var(--clrPrimary400);
 	width: 100%;
 	font-size: var(--fzLarger);
 	display: flex;
@@ -114,7 +115,7 @@ export const SectionTitle = styled.h1`
 		display: block;
 		height: 1px;
 		width: min(100%, 20rem);
-		background-color: var(--clrText);
+		background-color: var(--clrPrimary400);
 		top: 55%;
 		right: 0;
 	}

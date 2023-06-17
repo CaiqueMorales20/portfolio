@@ -16,7 +16,7 @@ export const HeaderS = styled.div`
 
 export const Logo = styled.h1`
 	font-size: var(--fzLarger);
-	color: var(--clrText);
+	color: var(--clrPrimary400);
 	font-weight: 400;
 `;
 

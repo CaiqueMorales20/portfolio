@@ -28,7 +28,8 @@ export const ProjectS = styled.div<ProjectProps>`
 `;
 
 export const TextContainer = styled.div<ProjectProps>`
-	background-color: #3c394b;
+	background-color: var(--clrPrimary900);
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 	flex-basis: 60%;
 	padding: 2em;
 	z-index: 4;
@@ -41,7 +42,7 @@ export const TextContainer = styled.div<ProjectProps>`
 
 export const Text = styled.p`
 	font-size: var(--fzNormal);
-	color: var(--clrNeutral);
+	color: var(--clrPrimary400);
 `;
 
 export const Link = styled.a`
@@ -52,7 +53,7 @@ export const Link = styled.a`
 
 export const Image = styled.img`
 	cursor: pointer;
-	transition: all 0.3s ease-in-out;
+	opacity: 0.7;
 
 	&:hover {
 		opacity: 1;

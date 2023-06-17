@@ -26,12 +26,12 @@ export const LineS = styled.div`
 		display: block;
 		height: 6rem;
 		width: 1px;
-		background-color: var(--clrText);
+		background-color: var(--clrPrimary500);
 	}
 `;
 
 export const Icon = styled.a`
-	color: var(--clrText);
+	color: var(--clrPrimary400);
 
 	& > * {
 		font-size: var(--fzNormal);
@@ -44,7 +44,7 @@ export const Icon = styled.a`
 
 export const Email = styled.a`
 	font-size: var(--fzSmall);
-	color: var(--clrText);
+	color: var(--clrPrimary400);
 	cursor: pointer;
 
 	&:hover {

@@ -19,7 +19,7 @@ export const Profession = styled.h1`
 	letter-spacing: 2px;
 	font-size: var(--fzLargest);
 	font-weight: 900;
-	color: var(--clrText);
+	color: var(--clrPrimary);
 `;
 
 export const DescriptionContainer = styled.div`
@@ -28,5 +28,5 @@ export const DescriptionContainer = styled.div`
 
 export const Description = styled.p`
 	font-size: var(--fzNormal);
-	color: var(--clrText);
+	color: var(--clrPrimary400);
 `;
