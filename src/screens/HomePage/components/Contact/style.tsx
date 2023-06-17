@@ -27,22 +27,22 @@ export const InputS = styled.input`
 	align-items: center;
 	padding: 1em;
 	color: #ffffff;
-	background-color: var(--clrPrimary900);
+	background-color: var(--clrPrimary700);
 
 	&::placeholder {
-		color: var(--clrPrimary500);
+		color: var(--clrPlaceholder);
 	}
 `;
 
 export const TextAreaS = styled.textarea`
-	background-color: var(--clrPrimary900);
+	background-color: var(--clrPrimary700);
 	height: 10rem;
 	padding: 1em;
 	resize: none;
 	grid-column: span 2;
 
 	&::placeholder {
-		color: var(--clrPrimary500);
+		color: var(--clrPlaceholder);
 	}
 `;
 

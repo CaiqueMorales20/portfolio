@@ -26,7 +26,7 @@ export const LineS = styled.div`
 		display: block;
 		height: 6rem;
 		width: 1px;
-		background-color: var(--clrPrimary500);
+		background-color: var(--clrPrimary400);
 	}
 `;
 

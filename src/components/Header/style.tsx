@@ -34,7 +34,7 @@ export const Nav = styled.ul<NavProps>`
 		top: 0;
 		width: 70vw;
 		justify-content: center;
-		background-color: #151224;
+		background-color: var(--clrPrimary950);
 		z-index: 999;
 		transform: ${(props) =>
 			props.opened ? "translateX(0%)" : "translateX(100%)"};

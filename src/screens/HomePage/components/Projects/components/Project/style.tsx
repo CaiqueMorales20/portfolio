@@ -28,8 +28,7 @@ export const ProjectS = styled.div<ProjectProps>`
 `;
 
 export const TextContainer = styled.div<ProjectProps>`
-	background-color: var(--clrPrimary900);
-	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+	background-color: var(--clrPrimary700);
 	flex-basis: 60%;
 	padding: 2em;
 	z-index: 4;
@@ -42,20 +41,18 @@ export const TextContainer = styled.div<ProjectProps>`
 
 export const Text = styled.p`
 	font-size: var(--fzNormal);
-	color: var(--clrPrimary400);
+	color: var(--clrPrimary500);
 `;
 
 export const Link = styled.a`
 	width: 100%;
 	height: 100%;
 	margin-bottom: -0.5rem;
+	overflow: hidden;
 `;
 
 export const Image = styled.img`
-	cursor: pointer;
-	opacity: 0.7;
-
 	&:hover {
-		opacity: 1;
+		scale: 1.05;
 	}
 `;
