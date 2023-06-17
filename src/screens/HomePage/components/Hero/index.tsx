@@ -16,8 +16,8 @@ export const Hero = () => {
 				<Profession>Developer</Profession>
 				<DescriptionContainer>
 					<Description>
-						Currently I continue to develop both websites and applications, my
-						main technology in which I develop is React.
+						Currently I develop both websites and applications, my main
+						technologys in which I develop are React and React native.
 					</Description>
 				</DescriptionContainer>
 			</TextContainer>
