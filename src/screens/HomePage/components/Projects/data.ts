@@ -1,5 +1,5 @@
 // Images
-import PortfolioImg from "../../../../../src/assets/img/projects/portfolio.png";
+import BlogC from "../../../../../src/assets/img/projects/blog-c.png";
 import TodoImg from "../../../../../src/assets/img/projects/todo.png";
 import CalculatorImg from "../../../../../src/assets/img/projects/calculator.png";
 
@@ -8,9 +8,9 @@ export const ProjectsData = [
 	{
 		title: "Portfolio",
 		description:
-			"Portfolio to show my knowledge, skills and tell a little about myself.",
-		link: "https://caiquemorales.com/",
-		img: PortfolioImg,
+			"Blog to share my knowledge, interesting techniques and technologies that I use as time goes by.",
+		link: "https://blog-c.netlify.app/",
+		img: BlogC,
 	},
 	{
 		title: "TODO",

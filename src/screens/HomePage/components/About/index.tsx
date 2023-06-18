@@ -26,11 +26,6 @@ export const About = () => {
 						responsiveness and captivating visual elements. I can confidently
 						say that I am genuinely passionate about it.
 					</Text>
-					<Text>
-						I also have a deep passion for CSS and its ability to offer
-						responsiveness and captivating visual elements. I can confidently
-						say that I am genuinely passionate about it.
-					</Text>
 				</TextContainer>
 				<ImageContainer>
 					<Image src={Fireship} alt="Fireship" />
