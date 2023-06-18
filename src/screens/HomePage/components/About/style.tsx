@@ -15,7 +15,13 @@ export const AboutS = styled.div`
 	}
 `;
 
-export const AboutText = styled.p`
+export const TextContainer = styled.div`
+	display: flex;
+	flex-direction: column;
+	gap: 1em;
+`;
+
+export const Text = styled.p`
 	font-size: var(--fzNormal);
 	color: var(--clrPrimary500);
 	text-align: justify;
