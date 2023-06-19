@@ -12,7 +12,9 @@ export const NavItem = (props: NavItemProps) => {
 	// Rendering
 	return (
 		<NavItemS>
-			<NavLink href={props.link}>{props.text}</NavLink>
+			<NavLink to={props.link} offset={-100} duration={500}>
+				{props.text}
+			</NavLink>
 		</NavItemS>
 	);
 };

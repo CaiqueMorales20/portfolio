@@ -5,6 +5,7 @@ import emailjs from "@emailjs/browser";
 // Imported Components
 import { Content, SectionTitle } from "../../../../GlobalStyle";
 import { Modal } from "./Modal";
+import { Element } from "react-scroll";
 
 // Styled Components
 import { ContactS, FormS, InputS, TextAreaS, SubmitButton } from "./style";
@@ -51,39 +52,41 @@ export const Contact = () => {
 	// Rendering
 	return (
 		<ContactContext.Provider value={{ modalOpened, setModalOpened }}>
-			<Content>
-				{modalOpened && <Modal />}
-				{/* Content */}
-				<SectionTitle>Contact</SectionTitle>
-				<ContactS>
-					<FormS ref={form} onSubmit={sendEmail}>
-						<InputS
-							type="text"
-							placeholder="Name"
-							value={user_name}
-							onChange={(e) => setUser_name(e.target.value)}
-							name="user_name"
-							required
-						/>
-						<InputS
-							type="email"
-							placeholder="Email"
-							value={user_email}
-							onChange={(e) => setUser_email(e.target.value)}
-							name="user_email"
-							required
-						/>
-						<TextAreaS
-							placeholder="Message"
-							name="message"
-							value={message}
-							onChange={(e) => setMessage(e.target.value)}
-							required
-						></TextAreaS>
-						<SubmitButton type="submit" value="SEND MESSAGE" />
-					</FormS>
-				</ContactS>
-			</Content>
+			<Element name="contact">
+				<Content>
+					{modalOpened && <Modal />}
+					{/* Content */}
+					<SectionTitle>Contact</SectionTitle>
+					<ContactS>
+						<FormS ref={form} onSubmit={sendEmail}>
+							<InputS
+								type="text"
+								placeholder="Name"
+								value={user_name}
+								onChange={(e) => setUser_name(e.target.value)}
+								name="user_name"
+								required
+							/>
+							<InputS
+								type="email"
+								placeholder="Email"
+								value={user_email}
+								onChange={(e) => setUser_email(e.target.value)}
+								name="user_email"
+								required
+							/>
+							<TextAreaS
+								placeholder="Message"
+								name="message"
+								value={message}
+								onChange={(e) => setMessage(e.target.value)}
+								required
+							></TextAreaS>
+							<SubmitButton type="submit" value="SEND MESSAGE" />
+						</FormS>
+					</ContactS>
+				</Content>
+			</Element>
 		</ContactContext.Provider>
 	);
 };

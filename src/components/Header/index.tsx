@@ -37,9 +37,9 @@ export const Header = () => {
 		<HeaderS>
 			<Logo>CM</Logo>
 			<Nav ref={wrapperRef} opened={mobileMenu}>
-				<NavItem link=" " text="About" />
-				<NavItem link=" " text="Projects" />
-				<NavItem link=" " text="Contact" />
+				<NavItem link="about" text="About" />
+				<NavItem link="projects" text="Projects" />
+				<NavItem link="contact" text="Contact" />
 				<Button text="Curriculum" />
 				<HamburguerNav>
 					<HamburgerBtn setMobileMenu={setMobileMenu} mobileMenu={mobileMenu} />

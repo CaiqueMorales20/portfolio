@@ -22,7 +22,8 @@ export const NavItemS = styled.li`
 	}
 `;
 
-export const NavLink = styled.a`
+export const NavLink = styled(Link)`
 	color: var(--clrPrimary400);
 	font-size: var(--fzSmall);
+	cursor: pointer;
 `;
