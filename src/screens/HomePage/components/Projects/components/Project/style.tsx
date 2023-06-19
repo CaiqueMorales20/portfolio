@@ -46,15 +46,13 @@ export const Text = styled.p`
 
 export const Link = styled.a`
 	width: 100%;
-	height: 40%;
+	height: 100%;
 	margin-bottom: -0.5rem;
 	overflow: hidden;
 `;
 
 export const Image = styled.img`
 	scale: 1.05;
-	height: 10% !important;
-	object-fit: cover;
 
 	&:hover {
 		scale: 1.075;
