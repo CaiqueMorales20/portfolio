@@ -9,11 +9,14 @@ import {
 
 // Functional Component
 export const Hero = () => {
+	// Variables
+	const profession = "Developer";
+
 	// Rendering
 	return (
 		<HeroS>
 			<TextContainer>
-				<Profession>Developer</Profession>
+				<Profession>{profession}</Profession>
 				<DescriptionContainer>
 					<Description>
 						Currently I develop both websites and applications, my main
