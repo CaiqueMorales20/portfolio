@@ -1,5 +1,7 @@
-// Styled Components
+// Imports
 import { useContext } from "react";
+
+// Styled Components
 import { NavItemS, NavLink } from "./style";
 
 // Types
