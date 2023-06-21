@@ -51,10 +51,4 @@ export const Link = styled.a`
 	overflow: hidden;
 `;
 
-export const Image = styled.img`
-	scale: 1.05;
-
-	&:hover {
-		scale: 1.075;
-	}
-`;
+export const Image = styled.img``;

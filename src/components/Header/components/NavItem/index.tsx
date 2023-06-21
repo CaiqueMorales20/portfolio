@@ -21,15 +21,13 @@ export const NavItem = (props: NavItemProps) => {
 
 	// Rendering
 	return (
-		<NavItemS>
-			<NavLink
-				onClick={() => setMobileMenu(false)}
-				to={props.link}
-				offset={-100}
-				duration={500}
-			>
-				{props.text}
-			</NavLink>
+		<NavItemS
+			onClick={() => setMobileMenu(false)}
+			to={props.link}
+			offset={-100}
+			duration={500}
+		>
+			<NavLink>{props.text}</NavLink>
 		</NavItemS>
 	);
 };

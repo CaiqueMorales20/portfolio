@@ -5,8 +5,9 @@ import styled from "styled-components";
 import { Link } from "react-scroll";
 
 // Styled Components
-export const NavItemS = styled.li`
+export const NavItemS = styled(Link)`
 	position: relative;
+	cursor: pointer;
 
 	&::after {
 		content: "";
@@ -22,8 +23,7 @@ export const NavItemS = styled.li`
 	}
 `;
 
-export const NavLink = styled(Link)`
+export const NavLink = styled.p`
 	color: var(--clrPrimary400);
 	font-size: var(--fzSmall);
-	cursor: pointer;
 `;

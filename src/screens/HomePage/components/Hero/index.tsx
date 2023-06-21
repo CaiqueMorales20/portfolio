@@ -20,7 +20,7 @@ export const Hero = () => {
 	const filtredDescription = description.split("");
 
 	// Animations
-	const variants = {
+	const profession_animation = {
 		visible: (index: any) => ({
 			opacity: 1,
 			transition: {
@@ -29,7 +29,8 @@ export const Hero = () => {
 		}),
 		hidden: { opacity: 0 },
 	};
-	const variants2 = {
+
+	const description_animation = {
 		visible: (index: any) => ({
 			opacity: 1,
 			transition: {
@@ -50,7 +51,7 @@ export const Hero = () => {
 								custom={index}
 								initial="hidden"
 								animate="visible"
-								variants={variants}
+								variants={profession_animation}
 							>
 								{item}
 							</motion.span>
@@ -65,7 +66,7 @@ export const Hero = () => {
 									custom={index}
 									initial="hidden"
 									animate="visible"
-									variants={variants2}
+									variants={description_animation}
 								>
 									{item}
 								</motion.span>
