@@ -1,9 +1,12 @@
 // Imports
 import styled from "styled-components";
+
+// Imported Components
 import { Content } from "../../../../GlobalStyle";
+import { motion } from "framer-motion";
 
 // Styled Components
-export const HeroS = styled.div`
+export const HeroS = styled(motion.div)`
 	height: calc(100vh - 6rem);
 	display: flex;
 	align-items: center;
@@ -15,7 +18,7 @@ export const TextContainer = styled(Content)`
 	padding-bottom: 0;
 `;
 
-export const Profession = styled.h1`
+export const Profession = styled(motion.h1)`
 	letter-spacing: 2px;
 	font-size: var(--fzLargest);
 	font-weight: 900;
