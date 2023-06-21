@@ -1,6 +1,8 @@
 // Imported Components
 import { Content, SectionTitle } from "../../../../GlobalStyle";
+import { motion } from "framer-motion";
 import { Element } from "react-scroll";
+import { useInView } from "react-intersection-observer";
 
 // Styled Components
 import { AboutS, TextContainer, Text, ImageContainer, Image } from "./style";
@@ -10,10 +12,15 @@ import CaiqueImg from "../../../../assets/img/about/about.jpg";
 
 // Functional Component
 export const About = () => {
+	// Variables
+	const { ref, inView, entry } = useInView({
+		threshold: 0.25,
+	});
+
 	// Rendering
 	return (
-		<Element name="about">
-			<Content>
+		<Element name="about" ref={ref}>
+			<Content as={motion.div} animate={inView ? { x: "0vw" } : { x: "150vw" }}>
 				<SectionTitle>About</SectionTitle>
 				<AboutS>
 					<TextContainer>
