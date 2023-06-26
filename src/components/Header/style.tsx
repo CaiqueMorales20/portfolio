@@ -1,5 +1,6 @@
 // Imports
 import styled from "styled-components";
+import { motion } from "framer-motion";
 
 // Types
 type NavProps = {
@@ -14,10 +15,11 @@ export const HeaderS = styled.div`
 	justify-content: space-between;
 `;
 
-export const Logo = styled.h1`
+export const Logo = styled(motion.h1)`
 	font-size: var(--fzLarger);
 	color: var(--clrPrimary400);
 	font-weight: 400;
+	cursor: pointer;
 `;
 
 export const Nav = styled.ul<NavProps>`

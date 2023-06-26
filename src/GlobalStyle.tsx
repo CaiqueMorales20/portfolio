@@ -1,5 +1,6 @@
 // Imports
 import styled, { createGlobalStyle } from "styled-components";
+import { motion } from "framer-motion";
 
 // Global Style
 export const GlobalStyle = createGlobalStyle`
@@ -93,7 +94,7 @@ export const PageContainer = styled.div`
 	margin-inline: auto;
 `;
 
-export const Content = styled.div`
+export const Content = styled(motion.div)`
 	margin-inline: auto;
 	width: 70%;
 	padding-bottom: 15rem;

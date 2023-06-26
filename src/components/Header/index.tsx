@@ -42,7 +42,15 @@ export const Header = () => {
 	return (
 		<HeaderContext.Provider value={{ mobileMenu, setMobileMenu }}>
 			<HeaderS>
-				<Logo>CM</Logo>
+				<Logo
+					whileHover={{
+						rotate: 360,
+						transition: { duration: 0.1, damping: 0 },
+					}}
+					whileTap={{ scale: 1.5 }}
+				>
+					CM
+				</Logo>
 				<Nav ref={wrapperRef} opened={mobileMenu}>
 					<NavItem link="about" text="About" />
 					<NavItem link="projects" text="Projects" />
