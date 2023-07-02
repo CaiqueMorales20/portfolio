@@ -20,7 +20,7 @@ export const App = () => {
 				<PageLoadS
 					initial={{ y: 0 }}
 					animate={{
-						y: "-100vw",
+						y: "-100vh",
 						transition: {
 							duration: 1,
 						},
