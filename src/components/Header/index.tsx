@@ -38,6 +38,21 @@ export const Header = () => {
 		}, [ref]);
 	}
 
+	const downloadCurriculum = () => {
+		// using Java Script method to get PDF file
+		fetch("Caique Morales Silva - Currículo.pdf").then((response) => {
+			response.blob().then((blob) => {
+				// Creating new object of PDF file
+				const fileURL = window.URL.createObjectURL(blob);
+				// Setting various property values
+				let alink = document.createElement("a");
+				alink.href = fileURL;
+				alink.download = "Caique Morales Silva - Currículo.pdf";
+				alink.click();
+			});
+		});
+	};
+
 	// Rendering
 	return (
 		<HeaderContext.Provider value={{ mobileMenu, setMobileMenu }}>
@@ -55,7 +70,7 @@ export const Header = () => {
 					<NavItem link="about" text="About" />
 					<NavItem link="projects" text="Projects" />
 					<NavItem link="contact" text="Contact" />
-					<Button text="Curriculum" />
+					<Button text="Curriculum" onClick={downloadCurriculum} />
 					<HamburguerNav>
 						<HamburgerBtn
 							setMobileMenu={setMobileMenu}

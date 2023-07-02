@@ -4,6 +4,7 @@ import { ButtonS } from "./style";
 type ButtonProps = {
 	text: string;
 	onClick?: () => void;
+	download?: boolean;
 };
 
 // Functional Component
