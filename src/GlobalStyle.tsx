@@ -19,6 +19,8 @@ export const GlobalStyle = createGlobalStyle`
     --clrPrimary950: #232535;
     --clrPrimary900: #262839;
     --clrPrimary700: #343952;
+    --clrPrimary650: #59628b;
+    --clrPrimary600: #4b5377;
     --clrPrimary500: #d1caca ;
     --clrPrimary400: #F1FAEE ;
 
@@ -49,6 +51,18 @@ export const GlobalStyle = createGlobalStyle`
     width: 100%;
     overflow-x: hidden;
     scroll-behavior: smooth;
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: var(--clrPrimary600);
+    border-radius: 0.5rem;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: var(--clrPrimary650);
+  }
+  ::-webkit-scrollbar {
+    width: 0.7rem;
+    background-color: var(--clrPrimary700);
+    border-radius: 0.5rem;
   }
   body{
     background-color: var(--clrPrimary900);
@@ -86,6 +100,7 @@ export const GlobalStyle = createGlobalStyle`
   a{
     text-decoration: none;
   }
+  
 `;
 
 // Styled Components

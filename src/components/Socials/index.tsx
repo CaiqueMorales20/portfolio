@@ -1,4 +1,5 @@
 // Styled Components
+import { useCopy } from "../../utils/useCopy";
 import { Icon, LineContainer, LineS, Email } from "./style";
 
 // Icons
@@ -17,6 +18,10 @@ const Line = ({ children }: LineProps) => {
 
 // Functional Component
 export const Socials = () => {
+	// Functions
+	const [value, copy] = useCopy();
+
+	// Rendering
 	return (
 		<LineContainer>
 			<Line>
@@ -34,7 +39,12 @@ export const Socials = () => {
 				</Icon>
 			</Line>
 			<Line>
-				<Email href=" ">caiquemorales20@gmail.com</Email>
+				<Email
+					onClick={() => copy("caiquemorales20@gmail.com")}
+					title={value ? "Email copied" : "Copy email"}
+				>
+					caiquemorales20@gmail.com
+				</Email>
 			</Line>
 		</LineContainer>
 	);

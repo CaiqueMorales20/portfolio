@@ -15,7 +15,7 @@ import { Button } from "../../../../components/Button";
 // Functional Component
 export const Hero = () => {
 	// Text
-	const profession = "Developer";
+	const profession = "Front-End Developer";
 	const filtredProfession = profession.split("");
 	const description =
 		"Currently I develop both websites and applications, my main technologys in which I develop are React and React native.";
