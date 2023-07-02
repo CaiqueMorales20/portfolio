@@ -1,6 +1,6 @@
 // Imports
 import React from "react";
-import { GlobalStyle } from "./GlobalStyle";
+import { GlobalStyle, PageLoadS, PageLoadText } from "./GlobalStyle";
 
 // Imported Components
 import { Header } from "./components/Header";
@@ -17,6 +17,17 @@ export const App = () => {
 		<React.Fragment>
 			<PageContainer>
 				<GlobalStyle />
+				<PageLoadS
+					initial={{ y: 0 }}
+					animate={{
+						y: "-100vw",
+						transition: {
+							duration: 1,
+						},
+					}}
+				>
+					<PageLoadText>CM</PageLoadText>
+				</PageLoadS>
 				<Header />
 				<HomePage />
 				<Socials />

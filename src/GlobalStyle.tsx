@@ -123,3 +123,21 @@ export const SectionTitle = styled.h1`
 		right: 0;
 	}
 `;
+
+export const PageLoadS = styled(motion.div)`
+	position: fixed;
+	inset: 0;
+	width: 100vw;
+	height: 100vh;
+	background-color: var(--clrPrimary950);
+	z-index: 99999;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+`;
+
+export const PageLoadText = styled.h1`
+	font-size: var(--fzLargest);
+	color: var(--clrPrimary400);
+	font-weight: 400;
+`;

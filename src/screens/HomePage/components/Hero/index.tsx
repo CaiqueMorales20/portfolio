@@ -26,7 +26,7 @@ export const Hero = () => {
 		visible: (index: any) => ({
 			opacity: 1,
 			transition: {
-				delay: index * 0.04,
+				delay: index * 0.04 + 1,
 			},
 		}),
 		hidden: { opacity: 0 },
@@ -36,7 +36,7 @@ export const Hero = () => {
 		visible: (index: any) => ({
 			opacity: 1,
 			transition: {
-				delay: index * 0.01 + profession.length * 0.04,
+				delay: index * 0.01 + profession.length * 0.04 + 1,
 			},
 		}),
 		hidden: { opacity: 0 },
