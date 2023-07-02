@@ -42,10 +42,11 @@ export const Icon = styled.a`
 	}
 `;
 
-export const Email = styled.button`
+export const Email = styled.p`
 	font-size: var(--fzSmall);
 	color: var(--clrPrimary400);
 	cursor: pointer;
+	writing-mode: vertical-lr;
 	position: relative;
 
 	&:hover {
