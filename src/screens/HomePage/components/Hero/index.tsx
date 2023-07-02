@@ -8,7 +8,9 @@ import {
 	Profession,
 	DescriptionContainer,
 	Description,
+	LinkButton,
 } from "./style";
+import { Button } from "../../../../components/Button";
 
 // Functional Component
 export const Hero = () => {
@@ -76,6 +78,9 @@ export const Hero = () => {
 						})}
 					</Description>
 				</DescriptionContainer>
+				<LinkButton to="about" offset={-100} duration={500}>
+					Read more
+				</LinkButton>
 			</TextContainer>
 		</HeroS>
 	);
