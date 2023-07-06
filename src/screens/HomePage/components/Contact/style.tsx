@@ -49,6 +49,9 @@ export const TextAreaS = styled.textarea`
 export const SubmitButton = styled.input`
 	--clr-normal: #231d3a;
 
+	width: max-content;
+	justify-self: center;
+	grid-column: span 2;
 	padding: 1.25em 3em;
 	border: 1px solid var(--clrPrimary400);
 	color: var(--clrPrimary400);

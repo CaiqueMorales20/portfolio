@@ -4,5 +4,7 @@ export type ProjectProps = {
 	link: string;
 	img: string;
 	description: string;
+	techs: string;
+	github: string;
 	reversed?: boolean;
 };

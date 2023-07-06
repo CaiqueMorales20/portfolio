@@ -21,7 +21,8 @@ export const GlobalStyle = createGlobalStyle`
     --clrPrimary700: #343952;
     --clrPrimary650: #59628b;
     --clrPrimary600: #4b5377;
-    --clrPrimary500: #d1caca ;
+    --clrPrimary550: #a39999;
+    --clrPrimary500: #d1caca;
     --clrPrimary400: #F1FAEE ;
 
     --clrPlaceholder: #afafaf ;
@@ -99,6 +100,7 @@ export const GlobalStyle = createGlobalStyle`
   }
   a{
     text-decoration: none;
+    display: inline-block;
   }
   
 `;

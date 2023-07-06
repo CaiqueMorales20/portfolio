@@ -12,6 +12,10 @@ export const ProjectS = styled.div<ProjectProps>`
 	align-items: center;
 	justify-content: center;
 
+	&:hover {
+		scale: 1.05;
+	}
+
 	@media screen and (max-width: 1080px) {
 		flex-direction: column;
 	}
@@ -28,11 +32,16 @@ export const ProjectS = styled.div<ProjectProps>`
 `;
 
 export const TextContainer = styled.div<ProjectProps>`
+	display: flex;
+	flex-direction: column;
+	gap: 2em;
+
 	background-color: var(--clrPrimary700);
 	flex-basis: 60%;
 	padding: 2em;
 	z-index: 4;
 	margin-left: -5%;
+
 	@media screen and (max-width: 1080px) {
 		margin-inline: 0;
 		flex-basis: 100%;
@@ -44,6 +53,11 @@ export const Text = styled.p`
 	color: var(--clrPrimary500);
 `;
 
+export const Techs = styled.p`
+	font-size: var(--fzNormal);
+	color: var(--clrPrimary550);
+`;
+
 export const Link = styled.a`
 	width: 100%;
 	height: 100%;
@@ -52,3 +66,22 @@ export const Link = styled.a`
 `;
 
 export const Image = styled.img``;
+
+export const IconContainer = styled.div`
+	margin-top: -1.5em;
+	display: flex;
+	gap: 0.5em;
+`;
+
+export const Icon = styled.a`
+	width: max-content;
+	display: grid;
+	place-items: center;
+	padding: 0.5em;
+	background-color: var(--clrPrimary650);
+	border-radius: 0.5em;
+
+	&:hover {
+		background-color: var(--clrPrimary900);
+	}
+`;
