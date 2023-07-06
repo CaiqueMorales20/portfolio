@@ -5,10 +5,11 @@ import { GlobalStyle, PageLoadS, PageLoadText } from "./GlobalStyle";
 // Imported Components
 import { Header } from "./components/Header";
 import { PageContainer } from "./GlobalStyle";
+import { Socials } from "./components/Socials";
+import { ScrollTop } from "./components/SrollTop";
 
 // Screens
 import { HomePage } from "./screens/HomePage";
-import { Socials } from "./components/Socials";
 
 // Functional Component
 export const App = () => {
@@ -31,6 +32,7 @@ export const App = () => {
 				<Header />
 				<HomePage />
 				<Socials />
+				<ScrollTop />
 			</PageContainer>
 		</React.Fragment>
 	);
