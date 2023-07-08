@@ -9,6 +9,7 @@ export const ScrollTopS = styled.div`
 	display: grid;
 	place-items: center;
 	border-radius: 0.5em;
+	cursor: pointer;
 
 	padding: 0.75em;
 	background-color: var(--clrPrimary950);
