@@ -51,6 +51,7 @@ export const TextContainer = styled.div<ProjectProps>`
 export const Text = styled.p`
 	font-size: var(--fzNormal);
 	color: var(--clrPrimary500);
+	text-align: justify;
 `;
 
 export const Techs = styled.p`
