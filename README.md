@@ -1,12 +1,12 @@
 
 # Portfolio
 
-A website designed to promote and inform about the window film application services offered by our client's company. The site aims to present the benefits, services, and history of the company, as well as provide useful information for visitors interested in applying window film to their properties.
+A personal portfolio project developed using the React library. This portfolio has been created to showcase my skills, projects, and experiences in an interactive and engaging manner. It includes dedicated sections to display my recent projects, contact information, and a brief biography.
 
 
 ## 🎬 Demonstration
 
-<img src="https://i.imgur.com/BK7LLvk.png" />
+<img src="https://i.imgur.com/qSRn3Wc.png" />
 
 ## 🛠 Technologies
 
