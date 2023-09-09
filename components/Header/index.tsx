@@ -1,8 +1,23 @@
+'use client'
+
+import { useOnClickOutside } from '@/utils/useOnClickOutside'
+import { useRef } from 'react'
+
 // Functional Component
 export default function Header() {
+  // Variables
+  const ref = useRef(null)
+
+  const handleClickOutside = () => {
+    // Your custom logic here
+    console.log('clicked outside')
+  }
+
+  useOnClickOutside(ref, handleClickOutside)
+
   // Rendering
   return (
-    <header className="fixed w-screen bg-primary">
+    <header className="fixed w-screen bg-primary" ref={ref}>
       <nav className="w-[90%] max-w-[1600px] m-auto h-20 flex items-center justify-between">
         <h1 className="font-medium text-base text-white">CM</h1>
         <ul className="flex gap-6">

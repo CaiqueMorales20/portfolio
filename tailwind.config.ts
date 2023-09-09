@@ -9,8 +9,9 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        primary: '#03111d',
-        accent: '#fbae3c',
+        primary: '#263238',
+        secondary: '#B0BEC5',
+        accent: '#FF9800',
       },
       fontSize: {
         sm: 'clamp(0.8rem, 0.17vw + 0.76rem, 0.89rem);',
