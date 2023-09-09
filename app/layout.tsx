@@ -1,8 +1,14 @@
-import Header from '@/components/Header'
-import './globals.css'
+// Imports
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 
+// Imported Components
+import Header from '@/components/Header'
+
+// Stlyes
+import './globals.css'
+
+// Fonts
 const inter = Inter({ subsets: ['latin'] })
 
 // SEO
