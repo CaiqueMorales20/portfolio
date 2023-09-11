@@ -20,7 +20,7 @@ export default function Header() {
     <header className="fixed w-screen bg-primary" ref={ref}>
       <nav className="w-[90%] max-w-[1600px] m-auto h-20 flex items-center justify-between">
         <h1 className="font-medium text-base text-white">CM</h1>
-        <ul className="flex gap-6">
+        <ul className="hidden md:flex gap-6">
           <a href="">
             <li className="text-white hover:text-accent duration-300 text-sm">
               Home
