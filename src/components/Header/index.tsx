@@ -1,6 +1,6 @@
 'use client'
 
-import { useOnClickOutside } from '@/utils/useOnClickOutside'
+import { useOnClickOutside } from '@/src/utils/useOnClickOutside'
 import { useRef } from 'react'
 
 // Functional Component
@@ -9,7 +9,6 @@ export default function Header() {
   const ref = useRef(null)
 
   const handleClickOutside = () => {
-    // Your custom logic here
     console.log('clicked outside')
   }
 
