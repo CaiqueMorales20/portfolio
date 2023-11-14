@@ -1,7 +1,7 @@
 // Imported Components
 
 import Container from '../components/Container'
-import Home from './(Home)/page'
+import Home from './(Home)'
 
 // Functional Component
 export default function Main() {

@@ -21,27 +21,27 @@ export default function Header() {
         <h1 className="font-medium text-base text-white">CM</h1>
         <ul className="hidden md:flex gap-6">
           <a href="">
-            <li className="text-white hover:text-accent duration-300 text-sm">
+            <li className="text-white font-semibold hover:text-accent duration-300 text-sm">
               Home
             </li>
           </a>
           <a href="">
-            <li className="text-white hover:text-accent duration-300 text-sm">
+            <li className="text-white font-semibold hover:text-accent duration-300 text-sm">
               About
             </li>
           </a>
           <a href="">
-            <li className="text-white hover:text-accent duration-300 text-sm">
+            <li className="text-white font-semibold hover:text-accent duration-300 text-sm">
               Projects
             </li>
           </a>
           <a href="">
-            <li className="text-white hover:text-accent duration-300 text-sm">
+            <li className="text-white font-semibold hover:text-accent duration-300 text-sm">
               Contact
             </li>
           </a>
         </ul>
-        <button className="text-white text-sm py-2 px-4 border-2 font-medium rounded-md border-solid border-white hover:text-accent duration-300 hover:bg-white ">
+        <button className="text-white font-semibold text-sm py-2 px-4 border-2 rounded-md border-solid border-white hover:text-accent duration-300 hover:bg-white ">
           Download CV
         </button>
       </nav>
