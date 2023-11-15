@@ -1,5 +1,4 @@
 // Imported Components
-
 import Container from '../components/Container'
 import Home from './(Home)'
 

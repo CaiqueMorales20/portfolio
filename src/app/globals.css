@@ -10,7 +10,9 @@ body{
   padding: 0;
   bottom: 0;
   box-sizing: border-box;
-  @apply bg-primary bg-cube;
+  padding-bottom: 60px;
+  overflow-x: hidden;
+  @apply bg-primary;
 }
 
 /* body::after{

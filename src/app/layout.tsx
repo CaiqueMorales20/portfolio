@@ -7,6 +7,7 @@ import Header from '../components/Header'
 
 // Stlyes
 import './globals.css'
+import Background from '../components/Background'
 
 // Fonts
 const inter = Inter({ subsets: ['latin'] })
@@ -35,6 +36,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <Header />
+        <Background />
         {children}
       </body>
     </html>

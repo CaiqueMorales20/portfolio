@@ -16,10 +16,10 @@ export default function Header() {
 
   // Rendering
   return (
-    <header className="fixed w-screen" ref={ref}>
+    <header className="absolute z-30 w-screen" ref={ref}>
       <nav className="container m-auto h-20 flex items-center justify-between">
         <h1 className="font-medium text-base text-white">CM</h1>
-        <ul className="hidden md:flex gap-6">
+        <ul className="hidden md:flex gap-6 z-20">
           <li className="text-white font-semibold hover:text-accent duration-300 text-sm">
             <a href="">Home</a>
           </li>
