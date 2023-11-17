@@ -5,8 +5,8 @@ import Project from './Project'
 export default function Projects() {
   // Rendering
   return (
-    <section>
-      <h2 className="text-neutral text-[24px] font-semibold mb-6">Projects</h2>
+    <section className="pt-60">
+      <h2 className="mb-6 text-[24px] font-semibold text-neutral">Projects</h2>
       <div className="grid grid-cols-3 gap-6 gap-y-10">
         {projects.map((project) => (
           <Project

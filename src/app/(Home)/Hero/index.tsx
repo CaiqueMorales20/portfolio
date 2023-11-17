@@ -5,15 +5,15 @@ export default function Hero() {
     <section className="mb-64 mt-32 flex flex-col gap-16">
       {/* Profession */}
       <div>
-        <h1 className="text-xl text-neutral font-bold">
-          <span className="text-accent font-bold relative underline-svg">
+        <h1 className="text-xl font-bold text-neutral">
+          <span className="underline-svg relative font-bold text-accent">
             Next & Tailwind
           </span>{' '}
           Developer
         </h1>
       </div>
       {/* Text */}
-      <div className="max-w-xl  flex flex-col gap-4">
+      <div className="flex  max-w-xl flex-col gap-4">
         <p className="text-base text-text">Hi there 👋</p>
         <p className="text-base text-text">
           I&apos;m Caique Morales, specializing in Next.js and Tailwind CSS. I

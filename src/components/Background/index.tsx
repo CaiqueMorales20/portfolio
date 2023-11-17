@@ -2,8 +2,8 @@
 export default function Background() {
   // Rendering
   return (
-    <div className="bg-black/30 z-0 absolute h-screen w-screen left-0 top-0">
-      <div className="w-full h-full bg-cube "></div>
+    <div className="absolute left-0 top-0 z-0 h-screen w-screen bg-black/30">
+      <div className="bg-cube h-full w-full "></div>
     </div>
   )
 }

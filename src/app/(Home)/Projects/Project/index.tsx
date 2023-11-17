@@ -34,17 +34,18 @@ export default function Project({
       </div>
       <div className="min-h-[100px]">
         <div>
-          <h3 className="text-neutral text-base font-bold">{title}</h3>
-          <p className="text-text text-sm text-justify">{description}</p>
+          <h3 className="text-base font-bold text-neutral">{title}</h3>
+          <p className="text-justify text-sm text-text">{description}</p>
         </div>
-        <div className="flex items-center gap-2 mt-4">
+        <div className="mt-4 flex items-center gap-2">
           {/* Github */}
           <a
-            className="w-5 bg-primary rounded-[10px]"
+            className="w-5 rounded-[10px] bg-primary"
             href={github}
             target="_blank"
           >
             <Image
+              className="filter-icon duration-300"
               src="/home/projects/github.svg"
               alt="Abrir no GitHub"
               width={40}
@@ -53,11 +54,12 @@ export default function Project({
           </a>
           {/* Site */}
           <a
-            className="w-5 bg-primary rounded-[10px]"
+            className="w-5 rounded-[10px] bg-primary"
             href={site}
             target="_blank"
           >
             <Image
+              className="filter-icon duration-300"
               src="/home/projects/search.svg"
               alt="Abrir no GitHub"
               width={40}

@@ -49,3 +49,7 @@ img{
   bottom: 40%;
   height: 4px;
 }
+
+.filter-icon:hover{
+  filter: invert(6%) sepia(25%) saturate(2964%) hue-rotate(198deg) brightness(96%) contrast(95%);
+}
