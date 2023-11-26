@@ -22,10 +22,10 @@ export default function Project({
 }: ProjectType) {
   // Rendering
   return (
-    <div className="flex flex-col gap-4">
+    <div className="flex flex-col gap-4 bg-[#18223a] p-4 shadow-md">
       <div>
         <Image
-          className="max-w-full object-cover"
+          className="max-w-full object-cover shadow-sm"
           src={photoPath}
           alt={alt}
           width={1000}

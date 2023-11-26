@@ -1,4 +1,5 @@
 // Imports
+import About from './About'
 import Hero from './Hero'
 import Projects from './Projects'
 
@@ -9,6 +10,7 @@ export default function Home() {
     <main>
       <Hero />
       <Projects />
+      <About />
     </main>
   )
 }
