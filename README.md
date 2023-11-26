@@ -9,6 +9,8 @@ This repository serves as a comprehensive collection of my work across various d
 
 - React
 - Styled Components
+- Next
+- Tailwind
   
 ## 👤 Authors
 
