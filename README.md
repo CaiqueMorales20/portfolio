@@ -1,4 +1,5 @@
 # Portfolio
+This repository serves as a comprehensive collection of my work across various domains, highlighting my skills and expertise in software development, data analysis, machine learning, and more.
 
 ## 🎬 Demonstration
 
